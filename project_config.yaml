@@ -1,0 +1,37 @@
+# Конфигурационный файл для настройки iOS проекта
+# Измените значения ниже перед запуском make setup
+
+# Название приложения (отображается на экране устройства)
+app_name: "Altidial"
+
+# Bundle ID приложения (уникальный идентификатор в App Store)
+# Формат: com.company.appname
+bundle_id: "com.nolanbouchet.altdial"
+
+# Путь к иконке приложения (1024x1024 PNG файл)
+# Можно использовать абсолютный или относительный путь
+icon_path: "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png"
+
+# Team ID для подписи (опционально)
+# Можно найти в Apple Developer Portal
+team_id: ""
+
+# Версия приложения
+app_version: "1.0.0"
+
+# Номер сборки
+build_number: "1"
+
+# Podfile (опционально)
+# Путь к шаблонному Podfile
+# Если указан, заменит стандартный ios/Podfile
+podfile_path: "scripts/Podfile"
+
+# Notification Service Extension (опционально)
+# Путь к пользовательскому NotificationService.swift
+# Если не указан, будет создан стандартный файл
+nse_swift_path: "scripts/NotificationService.swift"
+
+# Путь к пользовательскому Info.plist для NSE
+# Если не указан, будет создан стандартный файл
+nse_plist_path: ""

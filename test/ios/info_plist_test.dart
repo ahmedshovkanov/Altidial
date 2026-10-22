@@ -54,12 +54,12 @@ void main() {
     ).readAsStringSync();
     expect(
       project,
-      contains('PRODUCT_BUNDLE_IDENTIFIER = com.selfloop.altidial;'),
+      contains('PRODUCT_BUNDLE_IDENTIFIER = com.nolanbouchet.altdial;'),
     );
     expect(
       project,
       contains(
-        'PRODUCT_BUNDLE_IDENTIFIER = com.selfloop.altidial.RunnerTests;',
+        'PRODUCT_BUNDLE_IDENTIFIER = com.nolanbouchet.altdial.RunnerTests;',
       ),
     );
     expect(project, isNot(contains('com.selfloop.energyClock')));
