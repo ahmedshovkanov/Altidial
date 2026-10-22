@@ -1,5 +1,5 @@
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/features/calendar/widgets/month_header.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/features/calendar/widgets/month_header.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

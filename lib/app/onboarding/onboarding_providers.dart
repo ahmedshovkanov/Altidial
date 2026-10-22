@@ -1,4 +1,4 @@
-import 'package:energy_clock/data/providers.dart';
+import 'package:altidial/data/providers.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 /// The `settings` key that records that onboarding has been seen.

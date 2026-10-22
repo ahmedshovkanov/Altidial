@@ -1,5 +1,5 @@
-import 'package:energy_clock/core/geometry/dial_geometry.dart';
-import 'package:energy_clock/core/geometry/minute_range.dart';
+import 'package:altidial/core/geometry/dial_geometry.dart';
+import 'package:altidial/core/geometry/minute_range.dart';
 
 /// An event reduced to what ring assignment needs.
 class RingCandidate {

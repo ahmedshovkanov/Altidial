@@ -1,12 +1,12 @@
 import 'dart:math' as math;
 
-import 'package:energy_clock/app/theme/app_colors.dart';
-import 'package:energy_clock/app/theme/app_typography.dart';
-import 'package:energy_clock/app/theme/tone_colors.dart';
-import 'package:energy_clock/core/geometry/dial_geometry.dart';
-import 'package:energy_clock/core/geometry/minute_range.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/features/clock/model/calendar_event.dart';
+import 'package:altidial/app/theme/app_colors.dart';
+import 'package:altidial/app/theme/app_typography.dart';
+import 'package:altidial/app/theme/tone_colors.dart';
+import 'package:altidial/core/geometry/dial_geometry.dart';
+import 'package:altidial/core/geometry/minute_range.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/features/clock/model/calendar_event.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 

@@ -1,8 +1,8 @@
 import 'package:drift/drift.dart' show TableUpdateQuery;
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/repositories/session_repository.dart' show SessionRecord;
-import 'package:energy_clock/features/reflections/model/reflection.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/repositories/session_repository.dart' show SessionRecord;
+import 'package:altidial/features/reflections/model/reflection.dart';
 
 typedef ReflectedSession = ({
   SessionRecord session,

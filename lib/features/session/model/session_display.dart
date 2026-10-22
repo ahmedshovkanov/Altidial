@@ -1,7 +1,7 @@
 import 'dart:math' as math;
 
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/data/repositories/session_repository.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/data/repositories/session_repository.dart';
 
 /// What the session screen shows at one moment. Pure data worked out from the
 /// session and the time; the screen decides how to draw it.

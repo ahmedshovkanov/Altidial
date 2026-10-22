@@ -1,5 +1,5 @@
-import 'package:energy_clock/core/progress/streak.dart' show isNextCalendarDay;
-import 'package:energy_clock/core/strings.dart';
+import 'package:altidial/core/progress/streak.dart' show isNextCalendarDay;
+import 'package:altidial/core/strings.dart';
 
 /// Everything the badge predicates read, queried from source tables at
 /// evaluation time (spec §9.1) — never from the `day_scores` cache. Weeks are

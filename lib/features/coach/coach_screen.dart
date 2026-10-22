@@ -1,19 +1,19 @@
 import 'dart:convert';
 
-import 'package:energy_clock/app/navigation/tab_bar_inset.dart';
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/core/coach/insights_rules.dart';
-import 'package:energy_clock/core/coach/planner.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/features/clock/providers.dart';
-import 'package:energy_clock/features/coach/providers.dart';
-import 'package:energy_clock/features/coach/widgets/insight_card.dart';
-import 'package:energy_clock/features/coach/widgets/intent_sheet.dart';
-import 'package:energy_clock/features/coach/widgets/plan_sheet.dart';
-import 'package:energy_clock/features/coach/widgets/review_sheet.dart';
-import 'package:energy_clock/shared/layout/content_width.dart';
+import 'package:altidial/app/navigation/tab_bar_inset.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/core/coach/insights_rules.dart';
+import 'package:altidial/core/coach/planner.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/features/clock/providers.dart';
+import 'package:altidial/features/coach/providers.dart';
+import 'package:altidial/features/coach/widgets/insight_card.dart';
+import 'package:altidial/features/coach/widgets/intent_sheet.dart';
+import 'package:altidial/features/coach/widgets/plan_sheet.dart';
+import 'package:altidial/features/coach/widgets/review_sheet.dart';
+import 'package:altidial/shared/layout/content_width.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

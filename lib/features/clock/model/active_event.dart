@@ -1,4 +1,4 @@
-import 'package:energy_clock/features/clock/model/calendar_event.dart';
+import 'package:altidial/features/clock/model/calendar_event.dart';
 
 /// The events running at [minute] (`start <= minute < end`), latest-started
 /// first; events that start together go to the higher id first. The first one

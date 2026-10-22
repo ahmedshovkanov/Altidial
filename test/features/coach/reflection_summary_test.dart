@@ -1,4 +1,4 @@
-import 'package:energy_clock/core/coach/reflection_summary.dart';
+import 'package:altidial/core/coach/reflection_summary.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

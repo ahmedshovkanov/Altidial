@@ -1,5 +1,5 @@
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/data/repositories/reuse_repository.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/data/repositories/reuse_repository.dart';
 import 'package:flutter/material.dart';
 
 /// Asks for a template's name. Returns it trimmed, or null if the person

@@ -1,5 +1,5 @@
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/shared/widgets/adaptive_choice.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/shared/widgets/adaptive_choice.dart';
 import 'package:flutter/widgets.dart';
 
 /// How far a change to one event of a repeating series reaches.

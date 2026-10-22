@@ -1,6 +1,6 @@
-import 'package:energy_clock/app/theme/app_colors.dart';
-import 'package:energy_clock/app/theme/tone_colors.dart';
-import 'package:energy_clock/shared/widgets/ring_mark.dart';
+import 'package:altidial/app/theme/app_colors.dart';
+import 'package:altidial/app/theme/tone_colors.dart';
+import 'package:altidial/shared/widgets/ring_mark.dart';
 import 'package:flutter/widgets.dart';
 
 /// The Clock tab icon: a tiny three-arc ring. Unselected it is one flat

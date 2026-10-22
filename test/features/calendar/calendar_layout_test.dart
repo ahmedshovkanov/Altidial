@@ -1,4 +1,4 @@
-import 'package:energy_clock/features/calendar/calendar_layout.dart';
+import 'package:altidial/features/calendar/calendar_layout.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter_test/flutter_test.dart';
 

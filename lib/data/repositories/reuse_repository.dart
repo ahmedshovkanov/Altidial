@@ -1,12 +1,12 @@
 import 'package:drift/drift.dart' show Value;
-import 'package:energy_clock/core/geometry/minute_range.dart';
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/data/daos/template_dao.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/models/day_template.dart';
+import 'package:altidial/core/geometry/minute_range.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/data/daos/template_dao.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/models/day_template.dart';
 
-export 'package:energy_clock/data/models/day_template.dart';
+export 'package:altidial/data/models/day_template.dart';
 
 /// The longest template name; matches the column.
 const int maxTemplateNameLength = 60;

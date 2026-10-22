@@ -1,28 +1,28 @@
 import 'dart:async';
 import 'dart:math' as math;
 
-import 'package:energy_clock/app/navigation/tab_bar_inset.dart';
-import 'package:energy_clock/app/theme/app_colors.dart';
-import 'package:energy_clock/app/theme/app_typography.dart';
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/app/theme/tone_colors.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/data/providers.dart';
-import 'package:energy_clock/data/repositories/session_repository.dart';
-import 'package:energy_clock/features/session/model/session_display.dart';
-import 'package:energy_clock/features/session/providers.dart';
-import 'package:energy_clock/features/session/session_alerts.dart';
-import 'package:energy_clock/features/session/session_layout.dart';
-import 'package:energy_clock/features/session/widgets/alerts_banner.dart';
-import 'package:energy_clock/features/session/widgets/countdown_ring.dart';
-import 'package:energy_clock/features/session/widgets/debrief_sheet.dart';
-import 'package:energy_clock/features/session/widgets/recovery_card.dart';
-import 'package:energy_clock/features/session/widgets/session_controls.dart';
-import 'package:energy_clock/shared/layout/content_width.dart';
-import 'package:energy_clock/shared/layout/window_class.dart';
-import 'package:energy_clock/shared/widgets/adaptive_dialog.dart';
-import 'package:energy_clock/shared/widgets/tone_chip.dart';
+import 'package:altidial/app/navigation/tab_bar_inset.dart';
+import 'package:altidial/app/theme/app_colors.dart';
+import 'package:altidial/app/theme/app_typography.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/app/theme/tone_colors.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/data/providers.dart';
+import 'package:altidial/data/repositories/session_repository.dart';
+import 'package:altidial/features/session/model/session_display.dart';
+import 'package:altidial/features/session/providers.dart';
+import 'package:altidial/features/session/session_alerts.dart';
+import 'package:altidial/features/session/session_layout.dart';
+import 'package:altidial/features/session/widgets/alerts_banner.dart';
+import 'package:altidial/features/session/widgets/countdown_ring.dart';
+import 'package:altidial/features/session/widgets/debrief_sheet.dart';
+import 'package:altidial/features/session/widgets/recovery_card.dart';
+import 'package:altidial/features/session/widgets/session_controls.dart';
+import 'package:altidial/shared/layout/content_width.dart';
+import 'package:altidial/shared/layout/window_class.dart';
+import 'package:altidial/shared/widgets/adaptive_dialog.dart';
+import 'package:altidial/shared/widgets/tone_chip.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -48,7 +48,7 @@ class SessionScreen extends ConsumerWidget {
           .read(progressRepositoryProvider)
           .onSessionEnded(session.eventDate);
     } on Object catch (error) {
-      debugPrint('EnergyClock: progress update failed: $error');
+      debugPrint('Altidial: progress update failed: $error');
     }
   }
 

@@ -1,10 +1,10 @@
 // lib/features/projects/widgets/task_card.dart
-import 'package:energy_clock/app/theme/app_colors.dart';
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/core/task_status.dart';
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/features/projects/model/project_progress.dart';
+import 'package:altidial/app/theme/app_colors.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/core/task_status.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/features/projects/model/project_progress.dart';
 import 'package:flutter/material.dart';
 
 /// One task on the board or list: a priority dot, the title (struck through

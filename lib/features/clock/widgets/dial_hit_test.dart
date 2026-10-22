@@ -1,7 +1,7 @@
 import 'dart:ui';
 
-import 'package:energy_clock/core/geometry/dial_geometry.dart';
-import 'package:energy_clock/features/clock/model/calendar_event.dart';
+import 'package:altidial/core/geometry/dial_geometry.dart';
+import 'package:altidial/features/clock/model/calendar_event.dart';
 
 /// The event drawn under [point], or null. Matches on both ring and minute,
 /// so overlapping events on different rings are distinguishable.

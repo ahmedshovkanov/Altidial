@@ -1,6 +1,6 @@
 import 'dart:math' as math;
 
-import 'package:energy_clock/core/tone.dart';
+import 'package:altidial/core/tone.dart';
 
 /// One tone's arc of a day ring. Angles are in radians, clockwise, measured
 /// from the positive x axis as Flutter's canvas does, so a ring that starts at

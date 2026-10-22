@@ -1,7 +1,7 @@
-import 'package:energy_clock/core/geometry/dial_geometry.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/features/clock/model/calendar_event.dart';
+import 'package:altidial/core/geometry/dial_geometry.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/features/clock/model/calendar_event.dart';
 import 'package:flutter/semantics.dart';
 import 'package:flutter/widgets.dart';
 

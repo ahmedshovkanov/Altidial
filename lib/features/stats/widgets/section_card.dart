@@ -1,6 +1,6 @@
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/shared/widgets/app_card.dart';
-import 'package:energy_clock/shared/widgets/section_header.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/shared/widgets/app_card.dart';
+import 'package:altidial/shared/widgets/section_header.dart';
 import 'package:flutter/material.dart';
 
 /// The chrome every Stats section shares: a card, a header, then either an

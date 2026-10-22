@@ -1,7 +1,7 @@
-import 'package:energy_clock/core/roundup/roundup_payload.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/features/progress/profile_screen.dart';
+import 'package:altidial/core/roundup/roundup_payload.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/features/progress/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

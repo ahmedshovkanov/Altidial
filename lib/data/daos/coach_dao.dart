@@ -1,6 +1,6 @@
 import 'package:drift/drift.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/tables/coach_tables.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/tables/coach_tables.dart';
 
 part 'coach_dao.g.dart';
 

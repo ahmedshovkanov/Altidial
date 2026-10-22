@@ -3,10 +3,10 @@
 // period is pinned to the week of 7 October 2026, animations are off, and
 // `test/flutter_test_config.dart` loads Nunito, so every image is
 // deterministic and shows real text.
-import 'package:energy_clock/app/theme/app_theme.dart';
-import 'package:energy_clock/features/stats/model/stats_period.dart';
-import 'package:energy_clock/features/stats/providers.dart';
-import 'package:energy_clock/features/stats/stats_hub.dart';
+import 'package:altidial/app/theme/app_theme.dart';
+import 'package:altidial/features/stats/model/stats_period.dart';
+import 'package:altidial/features/stats/providers.dart';
+import 'package:altidial/features/stats/stats_hub.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';

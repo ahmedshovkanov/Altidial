@@ -1,4 +1,4 @@
-import 'package:energy_clock/core/progress/streak.dart' show isNextCalendarDay;
+import 'package:altidial/core/progress/streak.dart' show isNextCalendarDay;
 
 /// A timed session pays a point a minute; focus pays half as much again.
 int sessionXpMinutes(int minutes, {required bool focus}) =>

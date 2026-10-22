@@ -1,5 +1,5 @@
 // lib/features/flight_deck/flight_sort.dart
-import 'package:energy_clock/features/clock/data/event_repository.dart'
+import 'package:altidial/features/clock/data/event_repository.dart'
     show CalendarEvent;
 
 /// Flights divided at [now]: a flight whose end is after [now] is upcoming.

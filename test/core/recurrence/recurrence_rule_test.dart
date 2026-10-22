@@ -1,4 +1,4 @@
-import 'package:energy_clock/core/recurrence/recurrence_rule.dart';
+import 'package:altidial/core/recurrence/recurrence_rule.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

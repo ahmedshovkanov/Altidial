@@ -1,5 +1,5 @@
-import 'package:energy_clock/data/notifications/notification_service.dart';
-import 'package:energy_clock/data/repositories/settings_repository.dart';
+import 'package:altidial/data/notifications/notification_service.dart';
+import 'package:altidial/data/repositories/settings_repository.dart';
 
 /// Settings keys owned by notifications. Toggles default to true at the call
 /// site (`getBool(key, defaultValue: true)`); they do nothing until the OS

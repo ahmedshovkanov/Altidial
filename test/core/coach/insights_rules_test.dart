@@ -1,6 +1,6 @@
 // test/core/coach/insights_rules_test.dart
-import 'package:energy_clock/core/coach/insights_rules.dart';
-import 'package:energy_clock/data/repositories/stats_repository.dart';
+import 'package:altidial/core/coach/insights_rules.dart';
+import 'package:altidial/data/repositories/stats_repository.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 StatsSnapshot empty() => const StatsSnapshot.empty();

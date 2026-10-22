@@ -1,4 +1,4 @@
-import 'package:energy_clock/data/repositories/export_repository.dart';
+import 'package:altidial/data/repositories/export_repository.dart';
 
 /// In-memory [ShareService]: records what would have been shared.
 class FakeShareService implements ShareService {

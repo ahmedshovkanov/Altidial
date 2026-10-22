@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/repositories/coach_repository.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/repositories/coach_repository.dart';
 
 /// In-memory [CoachRepository] for widget tests. Tests seed [intent],
 /// [review] and [insights] (or leave them empty) and read the `last*`

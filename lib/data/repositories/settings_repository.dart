@@ -1,4 +1,4 @@
-import 'package:energy_clock/data/daos/settings_dao.dart';
+import 'package:altidial/data/daos/settings_dao.dart';
 
 /// Typed access to the app's settings. Booleans are stored as '1' and '0',
 /// integers as their decimal string; the table holds only text.

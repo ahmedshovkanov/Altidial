@@ -1,12 +1,12 @@
-import 'package:energy_clock/app/theme/app_colors.dart';
-import 'package:energy_clock/app/theme/tone_colors.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/data/repositories/calendar_repository.dart';
-import 'package:energy_clock/features/calendar/model/ring_segments.dart';
-import 'package:energy_clock/features/calendar/widgets/day_ring_painter.dart';
-import 'package:energy_clock/shared/widgets/press_scale.dart';
+import 'package:altidial/app/theme/app_colors.dart';
+import 'package:altidial/app/theme/tone_colors.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/data/repositories/calendar_repository.dart';
+import 'package:altidial/features/calendar/model/ring_segments.dart';
+import 'package:altidial/features/calendar/widgets/day_ring_painter.dart';
+import 'package:altidial/shared/widgets/press_scale.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 

@@ -1,5 +1,5 @@
-import 'package:energy_clock/data/providers.dart';
-import 'package:energy_clock/data/repositories/calendar_repository.dart';
+import 'package:altidial/data/providers.dart';
+import 'package:altidial/data/repositories/calendar_repository.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 /// How each day of a month is planned, keyed by the first of the month. The

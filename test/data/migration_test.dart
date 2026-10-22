@@ -1,5 +1,5 @@
 import 'package:drift_dev/api/migrations_native.dart';
-import 'package:energy_clock/data/database.dart';
+import 'package:altidial/data/database.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import '../generated_migrations/schema.dart';

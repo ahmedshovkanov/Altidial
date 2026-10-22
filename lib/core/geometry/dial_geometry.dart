@@ -1,7 +1,7 @@
 import 'dart:math' as math;
 import 'dart:ui';
 
-import 'package:energy_clock/core/time/day_time.dart';
+import 'package:altidial/core/time/day_time.dart';
 
 /// Pure polar math for the 24-hour dial. Deliberately free of any rendering
 /// dependency beyond [Offset] so it can be unit-tested directly — testing

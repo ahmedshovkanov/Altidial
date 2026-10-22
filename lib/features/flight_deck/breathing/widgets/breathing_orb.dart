@@ -1,9 +1,9 @@
 import 'dart:math' as math;
 
-import 'package:energy_clock/app/theme/app_colors.dart';
-import 'package:energy_clock/app/theme/app_typography.dart';
-import 'package:energy_clock/app/theme/tone_colors.dart';
-import 'package:energy_clock/features/flight_deck/breathing/breathing_cycle.dart';
+import 'package:altidial/app/theme/app_colors.dart';
+import 'package:altidial/app/theme/app_typography.dart';
+import 'package:altidial/app/theme/tone_colors.dart';
+import 'package:altidial/features/flight_deck/breathing/breathing_cycle.dart';
 import 'package:flutter/material.dart';
 
 /// Paints the outer progress ring: an arc from the top that fills on the

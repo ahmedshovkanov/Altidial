@@ -1,6 +1,6 @@
 import 'dart:math' as math;
 
-import 'package:energy_clock/core/time/day_time.dart';
+import 'package:altidial/core/time/day_time.dart';
 
 /// A half-open span of minutes within a single day: [start, end).
 class MinuteRange {

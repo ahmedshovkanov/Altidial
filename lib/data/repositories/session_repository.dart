@@ -1,14 +1,14 @@
 import 'dart:math' as math;
 
 import 'package:drift/drift.dart';
-import 'package:energy_clock/core/event_status.dart';
-import 'package:energy_clock/core/session/session_outcome.dart';
-import 'package:energy_clock/data/daos/session_dao.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/models/session.dart';
-import 'package:energy_clock/features/reflections/model/reflection.dart';
+import 'package:altidial/core/event_status.dart';
+import 'package:altidial/core/session/session_outcome.dart';
+import 'package:altidial/data/daos/session_dao.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/models/session.dart';
+import 'package:altidial/features/reflections/model/reflection.dart';
 
-export 'package:energy_clock/data/models/session.dart';
+export 'package:altidial/data/models/session.dart';
 
 /// Thrown by [SessionRepository.start] while another session is running. Only
 /// one session runs at a time.

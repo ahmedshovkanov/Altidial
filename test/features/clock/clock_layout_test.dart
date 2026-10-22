@@ -1,4 +1,4 @@
-import 'package:energy_clock/features/clock/clock_layout.dart';
+import 'package:altidial/features/clock/clock_layout.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

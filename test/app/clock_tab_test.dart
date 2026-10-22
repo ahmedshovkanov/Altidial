@@ -1,13 +1,13 @@
 import 'dart:async';
 
-import 'package:energy_clock/app/navigation/clock_tab.dart';
-import 'package:energy_clock/core/geometry/minute_range.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/data/providers.dart';
-import 'package:energy_clock/data/repositories/session_repository.dart';
-import 'package:energy_clock/features/clock/clock_screen.dart';
-import 'package:energy_clock/features/session/session_screen.dart';
+import 'package:altidial/app/navigation/clock_tab.dart';
+import 'package:altidial/core/geometry/minute_range.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/data/providers.dart';
+import 'package:altidial/data/repositories/session_repository.dart';
+import 'package:altidial/features/clock/clock_screen.dart';
+import 'package:altidial/features/session/session_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

@@ -1,6 +1,6 @@
-import 'package:energy_clock/app/theme/app_colors.dart';
-import 'package:energy_clock/app/theme/tone_colors.dart';
-import 'package:energy_clock/core/tone.dart';
+import 'package:altidial/app/theme/app_colors.dart';
+import 'package:altidial/app/theme/tone_colors.dart';
+import 'package:altidial/core/tone.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

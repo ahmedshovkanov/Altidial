@@ -7,13 +7,13 @@
 // test, so numerals and curved arc labels render as real text and a golden can
 // show whether labels read the right way up. The clock is fixed at 10:30 on
 // 23 August 2026 and animations are off, so every image is deterministic.
-import 'package:energy_clock/app/theme/app_theme.dart';
-import 'package:energy_clock/core/geometry/minute_range.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/features/clock/data/event_repository.dart';
-import 'package:energy_clock/features/clock/model/calendar_event.dart';
-import 'package:energy_clock/features/clock/providers.dart';
-import 'package:energy_clock/features/clock/widgets/dial_view.dart';
+import 'package:altidial/app/theme/app_theme.dart';
+import 'package:altidial/core/geometry/minute_range.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/features/clock/data/event_repository.dart';
+import 'package:altidial/features/clock/model/calendar_event.dart';
+import 'package:altidial/features/clock/providers.dart';
+import 'package:altidial/features/clock/widgets/dial_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';

@@ -1,4 +1,4 @@
-import 'package:energy_clock/core/roundup/iso_week.dart';
+import 'package:altidial/core/roundup/iso_week.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

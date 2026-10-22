@@ -1,8 +1,8 @@
 // lib/features/flight_deck/widgets/calm_card_view.dart
-import 'package:energy_clock/app/theme/app_colors.dart';
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/features/flight_deck/calm_content.dart';
+import 'package:altidial/app/theme/app_colors.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/features/flight_deck/calm_content.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

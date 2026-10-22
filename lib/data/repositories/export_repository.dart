@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:energy_clock/data/database.dart';
+import 'package:altidial/data/database.dart';
 import 'package:share_plus/share_plus.dart';
 
 /// The full-database JSON export (spec §9.7): every table's rows under their

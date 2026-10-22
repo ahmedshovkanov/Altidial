@@ -1,14 +1,14 @@
 // The Stats tab at every window size the app supports, four text scales, a
 // busy week, an empty week and a busy month: nothing overflows, everything
 // scrolls into view, and no frame throws.
-import 'package:energy_clock/app/navigation/tab_bar_inset.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/data/repositories/stats_repository.dart';
-import 'package:energy_clock/features/stats/model/stats_period.dart';
-import 'package:energy_clock/features/stats/providers.dart';
-import 'package:energy_clock/features/stats/stats_screen.dart';
-import 'package:energy_clock/shared/widgets/app_card.dart';
+import 'package:altidial/app/navigation/tab_bar_inset.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/data/repositories/stats_repository.dart';
+import 'package:altidial/features/stats/model/stats_period.dart';
+import 'package:altidial/features/stats/providers.dart';
+import 'package:altidial/features/stats/stats_screen.dart';
+import 'package:altidial/shared/widgets/app_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

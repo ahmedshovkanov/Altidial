@@ -1,6 +1,6 @@
 import 'package:drift/native.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/repositories/session_repository.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/repositories/session_repository.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 // Note (Task 3 brief Step 1 deviation): test/data/session_repository_test.dart

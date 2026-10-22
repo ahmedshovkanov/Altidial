@@ -3,12 +3,12 @@
 // badges and two archived weeks. Animations are off, and
 // `test/flutter_test_config.dart` loads Nunito, so every image is
 // deterministic and shows real text.
-import 'package:energy_clock/app/navigation/tab_scaffold.dart';
-import 'package:energy_clock/app/theme/app_theme.dart';
-import 'package:energy_clock/core/roundup/roundup_payload.dart';
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/providers.dart';
+import 'package:altidial/app/navigation/tab_scaffold.dart';
+import 'package:altidial/app/theme/app_theme.dart';
+import 'package:altidial/core/roundup/roundup_payload.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/providers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';

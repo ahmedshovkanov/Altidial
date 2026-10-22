@@ -1,12 +1,12 @@
 // lib/features/projects/widgets/task_editor.dart
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/core/task_status.dart';
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/repositories/task_repository.dart';
-import 'package:energy_clock/features/projects/model/task_board.dart';
-import 'package:energy_clock/features/projects/providers.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/core/task_status.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/repositories/task_repository.dart';
+import 'package:altidial/features/projects/model/task_board.dart';
+import 'package:altidial/features/projects/providers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

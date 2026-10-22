@@ -1,5 +1,5 @@
-import 'package:energy_clock/core/geometry/minute_range.dart';
-import 'package:energy_clock/core/tone.dart';
+import 'package:altidial/core/geometry/minute_range.dart';
+import 'package:altidial/core/tone.dart';
 
 /// One event of a saved template.
 class TemplateItem {

@@ -1,10 +1,10 @@
 import 'dart:async';
 
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/data/providers.dart';
-import 'package:energy_clock/data/repositories/reuse_repository.dart';
-import 'package:energy_clock/features/clock/widgets/template_name_dialog.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/data/providers.dart';
+import 'package:altidial/data/repositories/reuse_repository.dart';
+import 'package:altidial/features/clock/widgets/template_name_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

@@ -1,8 +1,8 @@
 import 'package:drift/drift.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/tables/events_table.dart';
-import 'package:energy_clock/data/tables/projects_table.dart';
-import 'package:energy_clock/data/tables/tasks_table.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/tables/events_table.dart';
+import 'package:altidial/data/tables/projects_table.dart';
+import 'package:altidial/data/tables/tasks_table.dart';
 
 part 'project_dao.g.dart';
 

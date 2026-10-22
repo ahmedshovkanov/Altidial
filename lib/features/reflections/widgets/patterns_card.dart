@@ -1,10 +1,10 @@
-import 'package:energy_clock/app/theme/app_colors.dart';
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/app/theme/tone_colors.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/features/reflections/providers.dart';
-import 'package:energy_clock/features/stats/widgets/section_card.dart';
+import 'package:altidial/app/theme/app_colors.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/app/theme/tone_colors.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/features/reflections/providers.dart';
+import 'package:altidial/features/stats/widgets/section_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

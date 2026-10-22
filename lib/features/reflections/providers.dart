@@ -1,6 +1,6 @@
-import 'package:energy_clock/data/providers.dart';
-import 'package:energy_clock/data/repositories/reflections_repository.dart';
-import 'package:energy_clock/features/reflections/model/reflection.dart';
+import 'package:altidial/data/providers.dart';
+import 'package:altidial/data/repositories/reflections_repository.dart';
+import 'package:altidial/features/reflections/model/reflection.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final reflectionsTimelineProvider = StreamProvider<List<ReflectedSession>>((ref) {

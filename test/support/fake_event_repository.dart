@@ -1,10 +1,10 @@
 import 'dart:async';
 
-import 'package:energy_clock/core/geometry/minute_range.dart';
-import 'package:energy_clock/core/geometry/ring_layout.dart';
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/features/clock/data/event_repository.dart';
+import 'package:altidial/core/geometry/minute_range.dart';
+import 'package:altidial/core/geometry/ring_layout.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/features/clock/data/event_repository.dart';
 
 /// In-memory [EventRepository] for widget tests.
 ///

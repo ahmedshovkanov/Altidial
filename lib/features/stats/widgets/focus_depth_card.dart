@@ -1,9 +1,9 @@
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/data/repositories/stats_repository.dart';
-import 'package:energy_clock/features/stats/model/stats_period.dart';
-import 'package:energy_clock/features/stats/widgets/section_card.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/data/repositories/stats_repository.dart';
+import 'package:altidial/features/stats/model/stats_period.dart';
+import 'package:altidial/features/stats/widgets/section_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

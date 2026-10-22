@@ -1,9 +1,9 @@
-import 'package:energy_clock/core/notifications/schedule.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/notifications/notification_permission.dart';
-import 'package:energy_clock/data/notifications/notification_service.dart';
-import 'package:energy_clock/data/repositories/series_materialiser.dart';
+import 'package:altidial/core/notifications/schedule.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/notifications/notification_permission.dart';
+import 'package:altidial/data/notifications/notification_service.dart';
+import 'package:altidial/data/repositories/series_materialiser.dart';
 
 /// Recomputes the full pending set and applies the difference (spec §10).
 /// Passes serialize through a future chain; a pass never throws.

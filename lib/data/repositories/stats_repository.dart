@@ -1,6 +1,6 @@
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/repositories/series_materialiser.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/repositories/series_materialiser.dart';
 
 /// Completed minutes for one tone on one local day.
 typedef ToneDayMinutes = ({DateTime date, Tone tone, int minutes});

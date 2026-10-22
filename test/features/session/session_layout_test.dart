@@ -1,5 +1,5 @@
-import 'package:energy_clock/features/session/session_layout.dart';
-import 'package:energy_clock/shared/layout/window_class.dart';
+import 'package:altidial/features/session/session_layout.dart';
+import 'package:altidial/shared/layout/window_class.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter_test/flutter_test.dart';
 

@@ -1,8 +1,8 @@
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/features/reflections/providers.dart';
-import 'package:energy_clock/features/reflections/widgets/reflection_row.dart';
-import 'package:energy_clock/features/session/widgets/debrief_sheet.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/features/reflections/providers.dart';
+import 'package:altidial/features/reflections/widgets/reflection_row.dart';
+import 'package:altidial/features/session/widgets/debrief_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

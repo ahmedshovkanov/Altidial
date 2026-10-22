@@ -1,4 +1,4 @@
-import 'package:energy_clock/shared/layout/window_class.dart';
+import 'package:altidial/shared/layout/window_class.dart';
 import 'package:flutter/widgets.dart';
 
 /// Single column on narrow windows, two columns from medium up.

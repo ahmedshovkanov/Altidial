@@ -1,6 +1,6 @@
 import 'package:drift/drift.dart' show TableUpdateQuery;
-import 'package:energy_clock/core/session/session_outcome.dart';
-import 'package:energy_clock/data/database.dart';
+import 'package:altidial/core/session/session_outcome.dart';
+import 'package:altidial/data/database.dart';
 
 /// One project's live detail: its row, linked events, and recomputed minutes.
 ///

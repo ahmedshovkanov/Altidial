@@ -1,11 +1,11 @@
 // lib/features/flight_deck/widgets/next_flight_hero.dart
-import 'package:energy_clock/app/theme/app_colors.dart';
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/features/clock/data/event_repository.dart'
+import 'package:altidial/app/theme/app_colors.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/features/clock/data/event_repository.dart'
     show CalendarEvent;
-import 'package:energy_clock/features/flight_deck/flight_sort.dart';
+import 'package:altidial/features/flight_deck/flight_sort.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

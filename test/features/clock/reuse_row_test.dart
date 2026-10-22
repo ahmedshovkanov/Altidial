@@ -1,5 +1,5 @@
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/features/clock/widgets/reuse_row.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/features/clock/widgets/reuse_row.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

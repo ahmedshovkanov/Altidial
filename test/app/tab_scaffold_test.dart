@@ -1,14 +1,17 @@
-import 'package:energy_clock/app/navigation/tab_bar_inset.dart';
-import 'package:energy_clock/app/navigation/tab_scaffold.dart';
-import 'package:energy_clock/app/theme/app_theme.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/data/providers.dart';
-import 'package:energy_clock/features/calendar/calendar_screen.dart';
-import 'package:energy_clock/features/clock/clock_screen.dart'
-    show ClockScreen;
-import 'package:energy_clock/features/clock/providers.dart';
-import 'package:energy_clock/features/flight_deck/flight_deck_screen.dart';
-import 'package:energy_clock/features/projects/projects_screen.dart';
+import 'package:altidial/app/navigation/tab_bar_inset.dart';
+import 'package:altidial/app/navigation/tab_scaffold.dart';
+import 'package:altidial/app/onboarding/onboarding_providers.dart';
+import 'package:altidial/app/theme/app_theme.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/data/providers.dart';
+import 'package:altidial/debug/debug_constants.dart';
+import 'package:altidial/debug/debug_providers.dart';
+import 'package:altidial/debug/demo_seeder.dart';
+import 'package:altidial/features/calendar/calendar_screen.dart';
+import 'package:altidial/features/clock/clock_screen.dart' show ClockScreen;
+import 'package:altidial/features/clock/providers.dart';
+import 'package:altidial/features/flight_deck/flight_deck_screen.dart';
+import 'package:altidial/features/projects/projects_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart' show ProviderScope;
 import 'package:flutter_test/flutter_test.dart';
@@ -26,8 +29,10 @@ import '../support/fake_stats_repository.dart';
 void main() {
   late FakeEventRepository repository;
   late FakeSessionRepository sessions;
+  late FakeSettingsRepository settings;
 
   setUp(() {
+    settings = FakeSettingsRepository();
     repository = FakeEventRepository();
     sessions = FakeSessionRepository(events: repository, clock: DateTime.now);
   });
@@ -37,7 +42,7 @@ void main() {
     repository.dispose();
   });
 
-  Widget harness() {
+  Widget harness({DemoSeeder? seeder}) {
     return ProviderScope(
       overrides: [
         eventRepositoryProvider.overrideWithValue(repository),
@@ -48,10 +53,11 @@ void main() {
         notificationServiceProvider.overrideWithValue(
           FakeNotificationService(),
         ),
-        settingsRepositoryProvider.overrideWithValue(FakeSettingsRepository()),
+        settingsRepositoryProvider.overrideWithValue(settings),
         statsRepositoryProvider.overrideWithValue(FakeStatsRepository()),
         progressRepositoryProvider.overrideWithValue(FakeProgressRepository()),
         roundupRepositoryProvider.overrideWithValue(FakeRoundupRepository()),
+        if (seeder != null) demoSeederProvider.overrideWithValue(seeder),
       ],
       child: MaterialApp(theme: AppTheme.light, home: const TabScaffold()),
     );
@@ -68,7 +74,9 @@ void main() {
     expect(find.text(Strings.tabClock), findsOneWidget);
   });
 
-  testWidgets('tapping the projects tab shows the projects hub', (tester) async {
+  testWidgets('tapping the projects tab shows the projects hub', (
+    tester,
+  ) async {
     await tester.pumpWidget(harness());
     await pumpDial(tester);
 
@@ -172,4 +180,49 @@ void main() {
     );
     expect(inset, 0);
   });
+
+  testWidgets('holding Profile for six seconds can load demo data', (
+    tester,
+  ) async {
+    final seeder = _CountingSeeder();
+    await tester.pumpWidget(harness(seeder: seeder));
+    await pumpDial(tester);
+
+    final gesture = await tester.startGesture(
+      tester.getCenter(find.byKey(const ValueKey('tab-3'))),
+    );
+    await tester.pump(const Duration(seconds: 7));
+    await gesture.up();
+    await pumpDial(tester);
+
+    expect(find.text(Strings.debugEnableTitle), findsOneWidget);
+    await tester.tap(find.text(Strings.debugEnableConfirm));
+    await pumpDial(tester);
+    await tester.pump(const Duration(milliseconds: 400));
+
+    expect(seeder.calls, 1);
+    expect(settings.values[debugModeKey], isTrue);
+    expect(settings.values[onboardingDoneKey], isTrue);
+  });
+
+  testWidgets('debug mode shows the Debug section on Profile', (tester) async {
+    settings.values[debugModeKey] = true;
+    await tester.pumpWidget(harness());
+    await pumpDial(tester);
+
+    await tester.tap(find.byKey(const ValueKey('tab-3')));
+    await pumpDial(tester);
+
+    expect(find.text(Strings.debugTitle), findsOneWidget);
+    expect(find.text(Strings.debugExit), findsOneWidget);
+  });
+}
+
+class _CountingSeeder implements DemoSeeder {
+  int calls = 0;
+
+  @override
+  Future<void> seed() async {
+    calls++;
+  }
 }

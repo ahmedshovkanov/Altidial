@@ -1,9 +1,9 @@
-import 'package:energy_clock/core/event_status.dart';
-import 'package:energy_clock/core/geometry/minute_range.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/data/database.dart';
+import 'package:altidial/core/event_status.dart';
+import 'package:altidial/core/geometry/minute_range.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/data/database.dart';
 
-export 'package:energy_clock/core/event_status.dart';
+export 'package:altidial/core/event_status.dart';
 
 /// An event as the rest of the app sees it. Kept separate from the Drift row
 /// so that widgets never depend on the persistence layer's generated types.

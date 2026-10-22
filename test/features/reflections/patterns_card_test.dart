@@ -1,7 +1,7 @@
-import 'package:energy_clock/app/theme/app_theme.dart';
-import 'package:energy_clock/features/reflections/model/reflection.dart';
-import 'package:energy_clock/features/reflections/providers.dart';
-import 'package:energy_clock/features/reflections/widgets/patterns_card.dart';
+import 'package:altidial/app/theme/app_theme.dart';
+import 'package:altidial/features/reflections/model/reflection.dart';
+import 'package:altidial/features/reflections/providers.dart';
+import 'package:altidial/features/reflections/widgets/patterns_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';

@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'dart:math' as math;
 
-import 'package:energy_clock/core/event_status.dart';
-import 'package:energy_clock/core/session/session_outcome.dart';
-import 'package:energy_clock/data/repositories/session_repository.dart';
-import 'package:energy_clock/features/reflections/model/reflection.dart';
+import 'package:altidial/core/event_status.dart';
+import 'package:altidial/core/session/session_outcome.dart';
+import 'package:altidial/data/repositories/session_repository.dart';
+import 'package:altidial/features/reflections/model/reflection.dart';
 
 import 'fake_event_repository.dart';
 

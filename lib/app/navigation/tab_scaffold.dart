@@ -1,12 +1,15 @@
-import 'package:energy_clock/app/navigation/app_tab_bar.dart';
-import 'package:energy_clock/app/navigation/calendar_tab.dart';
-import 'package:energy_clock/app/navigation/clock_tab.dart';
-import 'package:energy_clock/app/navigation/tab_bar_inset.dart';
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/features/clock/providers.dart';
-import 'package:energy_clock/features/flight_deck/flight_deck_screen.dart';
-import 'package:energy_clock/features/progress/profile_screen.dart';
-import 'package:energy_clock/features/projects/projects_screen.dart';
+import 'dart:async';
+
+import 'package:altidial/app/navigation/app_tab_bar.dart';
+import 'package:altidial/app/navigation/calendar_tab.dart';
+import 'package:altidial/app/navigation/clock_tab.dart';
+import 'package:altidial/app/navigation/tab_bar_inset.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/debug/debug_actions.dart';
+import 'package:altidial/features/clock/providers.dart';
+import 'package:altidial/features/flight_deck/flight_deck_screen.dart';
+import 'package:altidial/features/progress/profile_screen.dart';
+import 'package:altidial/features/projects/projects_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -46,6 +49,10 @@ class _TabScaffoldState extends ConsumerState<TabScaffold> {
     _select(0);
   }
 
+  void _onProfileHold() {
+    unawaited(activateDebug(context, ref));
+  }
+
   @override
   Widget build(BuildContext context) {
     final bottomSafe = MediaQuery.paddingOf(context).bottom;
@@ -76,7 +83,11 @@ class _TabScaffoldState extends ConsumerState<TabScaffold> {
             left: 0,
             right: 0,
             bottom: bottomSafe + AppTabBar.bottomMargin,
-            child: AppTabBar(selectedIndex: _index, onSelected: _select),
+            child: AppTabBar(
+              selectedIndex: _index,
+              onSelected: _select,
+              onProfileHold: _onProfileHold,
+            ),
           ),
         ],
       ),

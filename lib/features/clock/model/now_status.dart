@@ -1,6 +1,6 @@
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/features/clock/model/active_event.dart';
-import 'package:energy_clock/features/clock/model/calendar_event.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/features/clock/model/active_event.dart';
+import 'package:altidial/features/clock/model/calendar_event.dart';
 
 /// What the Now card says. Pure data; the card decides how to draw it.
 sealed class NowStatus {

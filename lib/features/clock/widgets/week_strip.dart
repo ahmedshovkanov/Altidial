@@ -1,15 +1,15 @@
 import 'dart:async';
 import 'dart:math' as math;
 
-import 'package:energy_clock/app/settings/settings_providers.dart';
-import 'package:energy_clock/app/theme/app_colors.dart';
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/app/theme/tone_colors.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/features/clock/providers.dart';
-import 'package:energy_clock/shared/widgets/press_scale.dart';
+import 'package:altidial/app/settings/settings_providers.dart';
+import 'package:altidial/app/theme/app_colors.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/app/theme/tone_colors.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/features/clock/providers.dart';
+import 'package:altidial/shared/widgets/press_scale.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

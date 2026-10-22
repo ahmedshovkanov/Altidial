@@ -1,9 +1,9 @@
 import 'package:drift/drift.dart' show Value;
 import 'package:drift/native.dart';
-import 'package:energy_clock/core/session/session_outcome.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/repositories/stats_repository.dart';
+import 'package:altidial/core/session/session_outcome.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/repositories/stats_repository.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

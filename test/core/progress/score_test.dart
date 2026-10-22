@@ -1,4 +1,4 @@
-import 'package:energy_clock/core/progress/score.dart';
+import 'package:altidial/core/progress/score.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

@@ -1,6 +1,6 @@
 import 'package:drift/drift.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/tables/settings_table.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/tables/settings_table.dart';
 
 part 'settings_dao.g.dart';
 

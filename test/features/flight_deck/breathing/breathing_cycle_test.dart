@@ -1,4 +1,4 @@
-import 'package:energy_clock/features/flight_deck/breathing/breathing_cycle.dart';
+import 'package:altidial/features/flight_deck/breathing/breathing_cycle.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

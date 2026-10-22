@@ -1,27 +1,27 @@
 import 'package:drift/drift.dart';
 import 'package:drift_flutter/drift_flutter.dart';
-import 'package:energy_clock/data/daos/coach_dao.dart';
-import 'package:energy_clock/data/daos/event_dao.dart';
-import 'package:energy_clock/data/daos/project_dao.dart';
-import 'package:energy_clock/data/daos/series_dao.dart';
-import 'package:energy_clock/data/daos/session_dao.dart';
-import 'package:energy_clock/data/daos/progress_dao.dart';
-import 'package:energy_clock/data/daos/roundup_dao.dart';
-import 'package:energy_clock/data/daos/settings_dao.dart';
-import 'package:energy_clock/data/daos/stats_dao.dart';
-import 'package:energy_clock/data/daos/task_dao.dart';
-import 'package:energy_clock/data/daos/template_dao.dart';
-import 'package:energy_clock/data/tables/coach_tables.dart';
-import 'package:energy_clock/data/tables/day_scores_table.dart';
-import 'package:energy_clock/data/tables/day_templates_table.dart';
-import 'package:energy_clock/data/tables/event_series_table.dart';
-import 'package:energy_clock/data/tables/events_table.dart';
-import 'package:energy_clock/data/tables/progress_table.dart';
-import 'package:energy_clock/data/tables/projects_table.dart';
-import 'package:energy_clock/data/tables/sessions_table.dart';
-import 'package:energy_clock/data/tables/tasks_table.dart';
-import 'package:energy_clock/data/tables/settings_table.dart';
-import 'package:energy_clock/data/tables/weekly_roundups_table.dart';
+import 'package:altidial/data/daos/coach_dao.dart';
+import 'package:altidial/data/daos/event_dao.dart';
+import 'package:altidial/data/daos/project_dao.dart';
+import 'package:altidial/data/daos/series_dao.dart';
+import 'package:altidial/data/daos/session_dao.dart';
+import 'package:altidial/data/daos/progress_dao.dart';
+import 'package:altidial/data/daos/roundup_dao.dart';
+import 'package:altidial/data/daos/settings_dao.dart';
+import 'package:altidial/data/daos/stats_dao.dart';
+import 'package:altidial/data/daos/task_dao.dart';
+import 'package:altidial/data/daos/template_dao.dart';
+import 'package:altidial/data/tables/coach_tables.dart';
+import 'package:altidial/data/tables/day_scores_table.dart';
+import 'package:altidial/data/tables/day_templates_table.dart';
+import 'package:altidial/data/tables/event_series_table.dart';
+import 'package:altidial/data/tables/events_table.dart';
+import 'package:altidial/data/tables/progress_table.dart';
+import 'package:altidial/data/tables/projects_table.dart';
+import 'package:altidial/data/tables/sessions_table.dart';
+import 'package:altidial/data/tables/tasks_table.dart';
+import 'package:altidial/data/tables/settings_table.dart';
+import 'package:altidial/data/tables/weekly_roundups_table.dart';
 
 part 'database.g.dart';
 
@@ -58,7 +58,7 @@ part 'database.g.dart';
   ],
 )
 class AppDatabase extends _$AppDatabase {
-  AppDatabase() : super(driftDatabase(name: 'energy_clock'));
+  AppDatabase() : super(driftDatabase(name: 'altidial'));
 
   AppDatabase.forTesting(super.executor);
 

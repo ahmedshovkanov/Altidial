@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/repositories/progress_repository.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/repositories/progress_repository.dart';
 
 /// In-memory [ProgressRepository] for widget tests. Tests seed [progress],
 /// [scores] and [badges] (or call the setters, which re-emit) and read the

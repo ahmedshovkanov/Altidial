@@ -1,7 +1,7 @@
-import 'package:energy_clock/core/geometry/minute_range.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/features/clock/model/calendar_event.dart';
-import 'package:energy_clock/features/clock/model/now_status.dart';
+import 'package:altidial/core/geometry/minute_range.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/features/clock/model/calendar_event.dart';
+import 'package:altidial/features/clock/model/now_status.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 final DateTime today = DateTime(2026, 10, 7);

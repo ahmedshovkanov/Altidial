@@ -1,4 +1,4 @@
-import 'package:energy_clock/app/app.dart';
+import 'package:altidial/app/app.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -12,5 +12,5 @@ void main() {
     final text = await rootBundle.loadString('assets/fonts/OFL.txt');
     yield LicenseEntryWithLineBreaks(<String>['Nunito'], text);
   });
-  runApp(const ProviderScope(child: EnergyClockApp()));
+  runApp(const ProviderScope(child: AltidialApp()));
 }

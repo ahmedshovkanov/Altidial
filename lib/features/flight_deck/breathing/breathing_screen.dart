@@ -1,11 +1,11 @@
 import 'dart:async';
 
-import 'package:energy_clock/app/theme/app_colors.dart';
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/features/flight_deck/breathing/breathing_cycle.dart';
-import 'package:energy_clock/features/flight_deck/breathing/widgets/breathing_orb.dart';
-import 'package:energy_clock/shared/layout/content_width.dart';
+import 'package:altidial/app/theme/app_colors.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/features/flight_deck/breathing/breathing_cycle.dart';
+import 'package:altidial/features/flight_deck/breathing/widgets/breathing_orb.dart';
+import 'package:altidial/shared/layout/content_width.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

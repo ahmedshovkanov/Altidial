@@ -1,7 +1,7 @@
 import 'package:drift/drift.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/tables/progress_table.dart';
-import 'package:energy_clock/data/tables/weekly_roundups_table.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/tables/progress_table.dart';
+import 'package:altidial/data/tables/weekly_roundups_table.dart';
 
 part 'roundup_dao.g.dart';
 

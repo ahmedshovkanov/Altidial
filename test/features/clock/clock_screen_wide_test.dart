@@ -1,14 +1,14 @@
-import 'package:energy_clock/app/navigation/tab_bar_inset.dart';
-import 'package:energy_clock/core/geometry/minute_range.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/features/clock/clock_screen.dart';
-import 'package:energy_clock/features/clock/widgets/clock_header.dart';
-import 'package:energy_clock/features/clock/widgets/day_load_bar.dart';
-import 'package:energy_clock/features/clock/widgets/dial_view.dart';
-import 'package:energy_clock/features/clock/widgets/event_detail_sheet.dart';
-import 'package:energy_clock/features/clock/widgets/now_card.dart';
-import 'package:energy_clock/features/clock/widgets/todays_plan_list.dart';
-import 'package:energy_clock/features/clock/widgets/week_strip.dart';
+import 'package:altidial/app/navigation/tab_bar_inset.dart';
+import 'package:altidial/core/geometry/minute_range.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/features/clock/clock_screen.dart';
+import 'package:altidial/features/clock/widgets/clock_header.dart';
+import 'package:altidial/features/clock/widgets/day_load_bar.dart';
+import 'package:altidial/features/clock/widgets/dial_view.dart';
+import 'package:altidial/features/clock/widgets/event_detail_sheet.dart';
+import 'package:altidial/features/clock/widgets/now_card.dart';
+import 'package:altidial/features/clock/widgets/todays_plan_list.dart';
+import 'package:altidial/features/clock/widgets/week_strip.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

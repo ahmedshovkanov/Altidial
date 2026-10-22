@@ -1,7 +1,7 @@
 import 'dart:math' as math;
 
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/features/calendar/model/ring_segments.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/features/calendar/model/ring_segments.dart';
 import 'package:flutter/rendering.dart';
 
 /// Paints one day's tone ring: a thin rounded arc per tone in its colour, or a

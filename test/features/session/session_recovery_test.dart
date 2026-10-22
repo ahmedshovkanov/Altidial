@@ -1,6 +1,6 @@
-import 'package:energy_clock/core/geometry/minute_range.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/features/session/providers.dart';
+import 'package:altidial/core/geometry/minute_range.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/features/session/providers.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import '../../support/clock_harness.dart';

@@ -1,5 +1,5 @@
-import 'package:energy_clock/core/recurrence/recurrence_rule.dart';
-import 'package:energy_clock/core/strings.dart';
+import 'package:altidial/core/recurrence/recurrence_rule.dart';
+import 'package:altidial/core/strings.dart';
 import 'package:intl/intl.dart';
 
 /// How a rule reads to a person: "Every day", "Weekdays",

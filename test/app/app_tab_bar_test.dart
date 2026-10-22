@@ -1,16 +1,24 @@
-import 'package:energy_clock/app/navigation/app_tab_bar.dart';
-import 'package:energy_clock/app/theme/app_theme.dart';
-import 'package:energy_clock/core/strings.dart';
+import 'package:altidial/app/navigation/app_tab_bar.dart';
+import 'package:altidial/app/theme/app_theme.dart';
+import 'package:altidial/core/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-Widget host({required int selected, required ValueChanged<int> onSelected}) {
+Widget host({
+  required int selected,
+  required ValueChanged<int> onSelected,
+  VoidCallback? onProfileHold,
+}) {
   return MaterialApp(
     theme: AppTheme.light,
     home: Scaffold(
       body: Align(
         alignment: Alignment.bottomCenter,
-        child: AppTabBar(selectedIndex: selected, onSelected: onSelected),
+        child: AppTabBar(
+          selectedIndex: selected,
+          onSelected: onSelected,
+          onProfileHold: onProfileHold,
+        ),
       ),
     ),
   );
@@ -123,6 +131,57 @@ void main() {
         )
         .first;
     expect(tester.getSize(pill).width, 375 - 32);
+  });
+
+  testWidgets('holding Profile for six seconds fires the debug callback', (
+    tester,
+  ) async {
+    var holds = 0;
+    await tester.pumpWidget(
+      host(selected: 0, onSelected: (_) {}, onProfileHold: () => holds++),
+    );
+
+    final gesture = await tester.startGesture(
+      tester.getCenter(find.byKey(const ValueKey('tab-3'))),
+    );
+    await tester.pump(const Duration(milliseconds: 5900));
+    expect(holds, 0);
+
+    await tester.pump(const Duration(milliseconds: 200));
+    expect(holds, 1);
+
+    await gesture.up();
+    await tester.pump();
+  });
+
+  testWidgets('releasing early cancels the hold', (tester) async {
+    var holds = 0;
+    await tester.pumpWidget(
+      host(selected: 0, onSelected: (_) {}, onProfileHold: () => holds++),
+    );
+
+    final gesture = await tester.startGesture(
+      tester.getCenter(find.byKey(const ValueKey('tab-3'))),
+    );
+    await tester.pump(const Duration(milliseconds: 5000));
+    await gesture.up();
+    await tester.pump(const Duration(seconds: 2));
+    expect(holds, 0);
+  });
+
+  testWidgets('other tabs do not fire the debug callback', (tester) async {
+    var holds = 0;
+    await tester.pumpWidget(
+      host(selected: 0, onSelected: (_) {}, onProfileHold: () => holds++),
+    );
+
+    final gesture = await tester.startGesture(
+      tester.getCenter(find.byKey(const ValueKey('tab-2'))),
+    );
+    await tester.pump(const Duration(seconds: 7));
+    await gesture.up();
+    await tester.pump();
+    expect(holds, 0);
   });
 
   testWidgets('large text does not overflow the bar', (tester) async {

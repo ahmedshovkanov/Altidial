@@ -4,10 +4,10 @@
 // fixed at Wednesday 7 October 2026, 10:30, animations are off, and
 // `test/flutter_test_config.dart` loads Nunito, so every image is
 // deterministic and shows real text.
-import 'package:energy_clock/app/navigation/tab_scaffold.dart';
-import 'package:energy_clock/app/theme/app_theme.dart';
-import 'package:energy_clock/core/geometry/minute_range.dart';
-import 'package:energy_clock/core/tone.dart';
+import 'package:altidial/app/navigation/tab_scaffold.dart';
+import 'package:altidial/app/theme/app_theme.dart';
+import 'package:altidial/core/geometry/minute_range.dart';
+import 'package:altidial/core/tone.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';

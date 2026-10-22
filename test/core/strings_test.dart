@@ -1,5 +1,5 @@
-import 'package:energy_clock/core/progress/badges.dart';
-import 'package:energy_clock/core/strings.dart';
+import 'package:altidial/core/progress/badges.dart';
+import 'package:altidial/core/strings.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
@@ -120,7 +120,7 @@ void main() {
   test('settings copy names its actions', () {
     expect(Strings.settingsRecalculateConfirm, 'Rebuild');
     expect(Strings.settingsEraseConfirm, 'Erase');
-    expect(Strings.settingsExportSubject, 'Energy Clock export');
+    expect(Strings.settingsExportSubject, 'Altidial export');
   });
 
   test('breathing copy formats its numbers', () {

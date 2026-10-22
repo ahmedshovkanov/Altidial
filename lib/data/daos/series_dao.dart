@@ -1,9 +1,9 @@
 import 'package:drift/drift.dart';
-import 'package:energy_clock/core/event_status.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/tables/event_series_table.dart';
-import 'package:energy_clock/data/tables/events_table.dart';
-import 'package:energy_clock/data/tables/sessions_table.dart';
+import 'package:altidial/core/event_status.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/tables/event_series_table.dart';
+import 'package:altidial/data/tables/events_table.dart';
+import 'package:altidial/data/tables/sessions_table.dart';
 
 part 'series_dao.g.dart';
 

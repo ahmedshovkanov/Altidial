@@ -1,5 +1,5 @@
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/core/tone.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/core/tone.dart';
 
 /// One planned event the scheduler knows about. `startsAt` is an absolute
 /// instant; callers exclude deleted occurrences.

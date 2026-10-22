@@ -1,12 +1,12 @@
-import 'package:energy_clock/app/theme/app_colors.dart';
-import 'package:energy_clock/app/theme/app_theme.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/shared/widgets/app_button.dart';
-import 'package:energy_clock/shared/widgets/app_card.dart';
-import 'package:energy_clock/shared/widgets/press_scale.dart';
-import 'package:energy_clock/shared/widgets/ring_mark.dart';
-import 'package:energy_clock/shared/widgets/section_header.dart';
-import 'package:energy_clock/shared/widgets/tone_chip.dart';
+import 'package:altidial/app/theme/app_colors.dart';
+import 'package:altidial/app/theme/app_theme.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/shared/widgets/app_button.dart';
+import 'package:altidial/shared/widgets/app_card.dart';
+import 'package:altidial/shared/widgets/press_scale.dart';
+import 'package:altidial/shared/widgets/ring_mark.dart';
+import 'package:altidial/shared/widgets/section_header.dart';
+import 'package:altidial/shared/widgets/tone_chip.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

@@ -1,16 +1,16 @@
 import 'package:drift/drift.dart';
-import 'package:energy_clock/core/geometry/minute_range.dart';
-import 'package:energy_clock/core/geometry/ring_layout.dart';
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/data/daos/event_dao.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/repositories/series_materialiser.dart';
-import 'package:energy_clock/features/clock/model/calendar_event.dart';
+import 'package:altidial/core/geometry/minute_range.dart';
+import 'package:altidial/core/geometry/ring_layout.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/data/daos/event_dao.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/repositories/series_materialiser.dart';
+import 'package:altidial/features/clock/model/calendar_event.dart';
 
-export 'package:energy_clock/core/geometry/ring_layout.dart'
+export 'package:altidial/core/geometry/ring_layout.dart'
     show RingOverflowException;
-export 'package:energy_clock/features/clock/model/calendar_event.dart';
+export 'package:altidial/features/clock/model/calendar_event.dart';
 
 abstract interface class EventRepository {
   Stream<List<CalendarEvent>> watchDay(DateTime day);

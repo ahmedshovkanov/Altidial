@@ -1,6 +1,6 @@
-import 'package:energy_clock/core/notifications/schedule.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/core/tone.dart';
+import 'package:altidial/core/notifications/schedule.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/core/tone.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

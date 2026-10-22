@@ -1,11 +1,11 @@
 import 'dart:async';
 
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/data/notifications/notification_permission.dart';
-import 'package:energy_clock/data/notifications/notification_service.dart';
-import 'package:energy_clock/data/providers.dart';
-import 'package:energy_clock/data/repositories/session_repository.dart';
-import 'package:energy_clock/features/session/providers.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/data/notifications/notification_permission.dart';
+import 'package:altidial/data/notifications/notification_service.dart';
+import 'package:altidial/data/providers.dart';
+import 'package:altidial/data/repositories/session_repository.dart';
+import 'package:altidial/features/session/providers.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

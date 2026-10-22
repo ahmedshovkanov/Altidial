@@ -1,10 +1,10 @@
 import 'package:drift/drift.dart' show Value;
 import 'package:drift/native.dart';
-import 'package:energy_clock/core/event_status.dart';
-import 'package:energy_clock/core/geometry/minute_range.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/repositories/reuse_repository.dart';
+import 'package:altidial/core/event_status.dart';
+import 'package:altidial/core/geometry/minute_range.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/repositories/reuse_repository.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

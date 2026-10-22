@@ -1,7 +1,7 @@
-import 'package:energy_clock/core/time/month_time.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/data/daos/event_dao.dart';
-import 'package:energy_clock/data/repositories/series_materialiser.dart';
+import 'package:altidial/core/time/month_time.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/data/daos/event_dao.dart';
+import 'package:altidial/data/repositories/series_materialiser.dart';
 
 /// Planned minutes per tone for one day. A tone with no events is absent.
 typedef ToneMinutes = Map<Tone, int>;

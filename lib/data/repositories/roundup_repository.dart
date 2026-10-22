@@ -1,12 +1,12 @@
 import 'dart:convert';
 
-import 'package:energy_clock/core/progress/streak.dart';
-import 'package:energy_clock/core/progress/xp.dart';
-import 'package:energy_clock/core/roundup/iso_week.dart';
-import 'package:energy_clock/core/roundup/roundup_payload.dart';
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/data/database.dart';
+import 'package:altidial/core/progress/streak.dart';
+import 'package:altidial/core/progress/xp.dart';
+import 'package:altidial/core/roundup/iso_week.dart';
+import 'package:altidial/core/roundup/roundup_payload.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/data/database.dart';
 
 /// One archived week: its ISO number and when it was generated.
 typedef RoundupSummary = ({int isoYear, int isoWeek, DateTime generatedAt});

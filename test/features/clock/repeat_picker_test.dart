@@ -1,6 +1,6 @@
-import 'package:energy_clock/core/recurrence/recurrence_rule.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/features/clock/widgets/repeat_picker.dart';
+import 'package:altidial/core/recurrence/recurrence_rule.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/features/clock/widgets/repeat_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

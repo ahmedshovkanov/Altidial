@@ -1,4 +1,4 @@
-import 'package:energy_clock/app/theme/tokens.dart';
+import 'package:altidial/app/theme/tokens.dart';
 import 'package:flutter/widgets.dart';
 
 /// Gives a tappable child a subtle press-in scale, in place of a splash.

@@ -1,7 +1,7 @@
 /// All user-facing copy. English-only by design; centralised so that
 /// localisation stays possible later without hunting through widgets.
 abstract final class Strings {
-  static const String appTitle = 'Energy Clock';
+  static const String appTitle = 'Altidial';
 
   static const String tabClock = 'Clock';
   static const String tabCalendar = 'Calendar';
@@ -109,7 +109,7 @@ abstract final class Strings {
   static const String onboardingTitle1 =
       'Plan your day by energy, not just time';
   static const String onboardingBody1 =
-      'Energy Clock puts your day on a 24-hour dial, so you can see how heavy '
+      'Altidial puts your day on a 24-hour dial, so you can see how heavy '
       'the day is before you start it.';
   static const String onboardingTitle2 = 'Three tones for every event';
   static const String toneExampleFocus =
@@ -176,7 +176,7 @@ abstract final class Strings {
   // Session alerts.
   static const String sessionEndedTitle = "Time's up";
   static String sessionEndedBody(String title) =>
-      '$title is done. Open Energy Clock to finish, or keep going.';
+      '$title is done. Open Altidial to finish, or keep going.';
   static const String alertsOffTitle = 'Alerts are off';
   static const String alertsOffBody =
       "You won't get an alert when time is up while the app is closed. The "
@@ -390,7 +390,7 @@ abstract final class Strings {
   static const String settingsRecalculateConfirm = 'Rebuild';
   static const String settingsRecalculated = 'Scores rebuilt.';
   static const String settingsExport = 'Export data';
-  static const String settingsExportSubject = 'Energy Clock export';
+  static const String settingsExportSubject = 'Altidial export';
   static const String settingsExportFailed = 'Export failed. Try again.';
   static const String settingsErase = 'Erase everything';
   static const String settingsEraseTitle = 'Erase everything?';
@@ -849,4 +849,33 @@ abstract final class Strings {
   static String patternsPostLifeTitle(String lift) => 'Focus after Life +$lift';
   static String patternsPostLifeDetail(String postLife, String otherFocus, int n) =>
       'Focus right after Life averages $postLife vs $otherFocus (n=$n)';
+
+  // Debug / demo mode.
+  static const String debugTitle = 'Debug';
+  static const String debugStatusActive = 'Demo data is active';
+  static const String debugStatusHint =
+      'Three months of sample events, sessions and projects are loaded.';
+  static const String debugEnableTitle = 'Load demo data?';
+  static const String debugEnableBody =
+      'All events, sessions, projects, tasks, reflections, templates, badges '
+      'and settings will be erased and replaced with three months of demo '
+      'data. This cannot be undone.';
+  static const String debugEnableConfirm = 'Load demo data';
+  static const String debugLoaded = 'Demo data loaded.';
+  static const String debugAlreadyOn = 'Demo mode is already on.';
+  static const String debugFailed = "Couldn't load demo data.";
+  static const String debugRegenerate = 'Regenerate demo data';
+  static const String debugRegenerateTitle = 'Regenerate demo data?';
+  static const String debugRegenerateBody =
+      'Current demo data will be erased and replaced with a fresh three-month '
+      'dataset. This cannot be undone.';
+  static const String debugRegenerateConfirm = 'Regenerate';
+  static const String debugRegenerated = 'Demo data regenerated.';
+  static const String debugExit = 'Exit debug mode';
+  static const String debugExitTitle = 'Exit debug mode?';
+  static const String debugExitBody =
+      'All demo data and settings will be erased. The app will return to '
+      'onboarding. This cannot be undone.';
+  static const String debugExitConfirm = 'Exit and erase';
+  static const String debugExited = 'Demo data erased.';
 }

@@ -1,6 +1,6 @@
-import 'package:energy_clock/data/notifications/notification_permission.dart';
-import 'package:energy_clock/data/notifications/notification_service.dart';
-import 'package:energy_clock/data/repositories/settings_repository.dart';
+import 'package:altidial/data/notifications/notification_permission.dart';
+import 'package:altidial/data/notifications/notification_service.dart';
+import 'package:altidial/data/repositories/settings_repository.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import '../support/fake_notification_service.dart';

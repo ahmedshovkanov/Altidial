@@ -1,9 +1,9 @@
-import 'package:energy_clock/app/theme/app_colors.dart';
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/core/progress/xp.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/shared/widgets/app_card.dart';
+import 'package:altidial/app/theme/app_colors.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/core/progress/xp.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/shared/widgets/app_card.dart';
 import 'package:flutter/material.dart';
 
 /// Level, the XP bar into the next level, and the streaks. A null row is a

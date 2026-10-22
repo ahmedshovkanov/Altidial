@@ -13,8 +13,8 @@
 import 'dart:io';
 import 'dart:ui' as ui;
 
-import 'package:energy_clock/app/theme/tone_colors.dart';
-import 'package:energy_clock/shared/widgets/ring_mark.dart';
+import 'package:altidial/app/theme/tone_colors.dart';
+import 'package:altidial/shared/widgets/ring_mark.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';

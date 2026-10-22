@@ -1,4 +1,4 @@
-import 'package:energy_clock/data/notifications/notification_service.dart';
+import 'package:altidial/data/notifications/notification_service.dart';
 
 /// A [NotificationService] that remembers what it was asked to do.
 class FakeNotificationService implements NotificationService {

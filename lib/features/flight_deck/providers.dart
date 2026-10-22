@@ -1,10 +1,10 @@
 // lib/features/flight_deck/providers.dart
 import 'dart:async';
 
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/data/providers.dart';
-import 'package:energy_clock/features/flight_deck/favorites_codec.dart';
-import 'package:energy_clock/features/flight_deck/flight_sort.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/data/providers.dart';
+import 'package:altidial/features/flight_deck/favorites_codec.dart';
+import 'package:altidial/features/flight_deck/flight_sort.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 /// Settings key holding the comma-joined ids of starred calm cards.

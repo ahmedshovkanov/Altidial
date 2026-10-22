@@ -1,10 +1,10 @@
 import 'dart:async';
 
-import 'package:energy_clock/app/navigation/tab_bar_inset.dart';
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/core/time/month_time.dart';
-import 'package:energy_clock/features/calendar/widgets/month_header.dart';
-import 'package:energy_clock/features/calendar/widgets/month_page.dart';
+import 'package:altidial/app/navigation/tab_bar_inset.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/core/time/month_time.dart';
+import 'package:altidial/features/calendar/widgets/month_header.dart';
+import 'package:altidial/features/calendar/widgets/month_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

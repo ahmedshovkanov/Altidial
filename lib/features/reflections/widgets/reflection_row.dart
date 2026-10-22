@@ -1,10 +1,10 @@
-import 'package:energy_clock/app/theme/app_colors.dart';
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/app/theme/tone_colors.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/data/repositories/reflections_repository.dart';
-import 'package:energy_clock/features/reflections/model/reflection.dart';
+import 'package:altidial/app/theme/app_colors.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/app/theme/tone_colors.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/data/repositories/reflections_repository.dart';
+import 'package:altidial/features/reflections/model/reflection.dart';
 import 'package:flutter/material.dart';
 
 class ReflectionRowTile extends StatelessWidget {

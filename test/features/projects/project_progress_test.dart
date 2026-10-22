@@ -1,6 +1,6 @@
 // test/features/projects/project_progress_test.dart
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/features/projects/model/project_progress.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/features/projects/model/project_progress.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

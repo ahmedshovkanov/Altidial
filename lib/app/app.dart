@@ -1,14 +1,14 @@
-import 'package:energy_clock/app/navigation/tab_scaffold.dart';
-import 'package:energy_clock/app/onboarding/onboarding_flow.dart';
-import 'package:energy_clock/app/onboarding/onboarding_providers.dart';
-import 'package:energy_clock/app/settings/settings_providers.dart';
-import 'package:energy_clock/app/theme/app_theme.dart';
-import 'package:energy_clock/core/strings.dart';
+import 'package:altidial/app/navigation/tab_scaffold.dart';
+import 'package:altidial/app/onboarding/onboarding_flow.dart';
+import 'package:altidial/app/onboarding/onboarding_providers.dart';
+import 'package:altidial/app/settings/settings_providers.dart';
+import 'package:altidial/app/theme/app_theme.dart';
+import 'package:altidial/core/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class EnergyClockApp extends ConsumerWidget {
-  const EnergyClockApp({super.key});
+class AltidialApp extends ConsumerWidget {
+  const AltidialApp({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

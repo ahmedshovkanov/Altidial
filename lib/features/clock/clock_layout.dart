@@ -1,8 +1,8 @@
-import 'package:energy_clock/features/clock/widgets/clock_header.dart';
-import 'package:energy_clock/features/clock/widgets/day_load_bar.dart';
-import 'package:energy_clock/features/clock/widgets/now_card.dart';
-import 'package:energy_clock/features/clock/widgets/reuse_row.dart';
-import 'package:energy_clock/features/clock/widgets/week_strip.dart';
+import 'package:altidial/features/clock/widgets/clock_header.dart';
+import 'package:altidial/features/clock/widgets/day_load_bar.dart';
+import 'package:altidial/features/clock/widgets/now_card.dart';
+import 'package:altidial/features/clock/widgets/reuse_row.dart';
+import 'package:altidial/features/clock/widgets/week_strip.dart';
 
 /// Which optional pieces of the Clock screen fit, decided from the height left
 /// for them and the text size.

@@ -1,10 +1,10 @@
 // test/core/coach/planner_test.dart
-import 'package:energy_clock/core/coach/planner.dart';
-import 'package:energy_clock/core/geometry/minute_range.dart';
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/features/clock/model/calendar_event.dart';
-import 'package:energy_clock/core/event_status.dart';
+import 'package:altidial/core/coach/planner.dart';
+import 'package:altidial/core/geometry/minute_range.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/features/clock/model/calendar_event.dart';
+import 'package:altidial/core/event_status.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 CalendarEvent event(int id, Tone tone, int start, int end, {bool flight = false}) =>

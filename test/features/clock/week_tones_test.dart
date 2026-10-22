@@ -1,10 +1,10 @@
 import 'package:drift/native.dart';
-import 'package:energy_clock/core/geometry/minute_range.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/providers.dart';
-import 'package:energy_clock/features/clock/data/event_repository.dart';
-import 'package:energy_clock/features/clock/providers.dart';
+import 'package:altidial/core/geometry/minute_range.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/providers.dart';
+import 'package:altidial/features/clock/data/event_repository.dart';
+import 'package:altidial/features/clock/providers.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 

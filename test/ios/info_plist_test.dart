@@ -40,6 +40,31 @@ void main() {
     expect(plist.contains('UIRequiresFullScreen'), isFalse);
   });
 
+  test('the app is named Altidial and uses the Altidial bundle id', () {
+    expect(
+      plist,
+      contains('<key>CFBundleDisplayName</key>\n\t<string>Altidial</string>'),
+    );
+    expect(
+      plist,
+      contains('<key>CFBundleName</key>\n\t<string>Altidial</string>'),
+    );
+    final project = File(
+      'ios/Runner.xcodeproj/project.pbxproj',
+    ).readAsStringSync();
+    expect(
+      project,
+      contains('PRODUCT_BUNDLE_IDENTIFIER = com.selfloop.altidial;'),
+    );
+    expect(
+      project,
+      contains(
+        'PRODUCT_BUNDLE_IDENTIFIER = com.selfloop.altidial.RunnerTests;',
+      ),
+    );
+    expect(project, isNot(contains('com.selfloop.energyClock')));
+  });
+
   test('every build configuration targets both iPhone and iPad', () {
     final project = File(
       'ios/Runner.xcodeproj/project.pbxproj',

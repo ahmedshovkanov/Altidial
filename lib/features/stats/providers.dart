@@ -1,9 +1,9 @@
-import 'package:energy_clock/app/settings/settings_providers.dart';
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/core/time/month_time.dart';
-import 'package:energy_clock/data/providers.dart';
-import 'package:energy_clock/data/repositories/stats_repository.dart';
-import 'package:energy_clock/features/stats/model/stats_period.dart';
+import 'package:altidial/app/settings/settings_providers.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/core/time/month_time.dart';
+import 'package:altidial/data/providers.dart';
+import 'package:altidial/data/repositories/stats_repository.dart';
+import 'package:altidial/features/stats/model/stats_period.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 /// The week or month the Stats tab shows.

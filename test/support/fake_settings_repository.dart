@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:energy_clock/data/repositories/settings_repository.dart';
+import 'package:altidial/data/repositories/settings_repository.dart';
 
 /// In-memory [SettingsRepository] for widget tests. Booleans are stored
 /// as-is, integers as decimal strings — the same shapes the Drift repository

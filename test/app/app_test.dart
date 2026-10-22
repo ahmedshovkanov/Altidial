@@ -1,11 +1,11 @@
 import 'dart:async';
 
-import 'package:energy_clock/app/app.dart';
-import 'package:energy_clock/app/navigation/tab_scaffold.dart';
-import 'package:energy_clock/app/onboarding/onboarding_flow.dart';
-import 'package:energy_clock/app/onboarding/onboarding_providers.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/data/providers.dart';
+import 'package:altidial/app/app.dart';
+import 'package:altidial/app/navigation/tab_scaffold.dart';
+import 'package:altidial/app/onboarding/onboarding_flow.dart';
+import 'package:altidial/app/onboarding/onboarding_providers.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/data/providers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -31,7 +31,7 @@ void main() {
 
   Widget app() => UncontrolledProviderScope(
     container: harness.container,
-    child: const EnergyClockApp(),
+    child: const AltidialApp(),
   );
 
   testWidgets('first launch shows onboarding', (tester) async {

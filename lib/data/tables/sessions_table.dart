@@ -1,5 +1,5 @@
 import 'package:drift/drift.dart';
-import 'package:energy_clock/data/tables/events_table.dart';
+import 'package:altidial/data/tables/events_table.dart';
 
 /// One timed session on an event (spec §4.2). At most one row has
 /// `outcome = 0` (running) at a time; the repository enforces that.

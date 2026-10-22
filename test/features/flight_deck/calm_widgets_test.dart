@@ -1,8 +1,8 @@
 // test/features/flight_deck/calm_widgets_test.dart
-import 'package:energy_clock/app/theme/app_theme.dart';
-import 'package:energy_clock/features/flight_deck/calm_content.dart';
-import 'package:energy_clock/features/flight_deck/widgets/calm_card_view.dart';
-import 'package:energy_clock/features/flight_deck/widgets/grounding_steps.dart';
+import 'package:altidial/app/theme/app_theme.dart';
+import 'package:altidial/features/flight_deck/calm_content.dart';
+import 'package:altidial/features/flight_deck/widgets/calm_card_view.dart';
+import 'package:altidial/features/flight_deck/widgets/grounding_steps.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

@@ -1,7 +1,7 @@
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/shared/widgets/app_button.dart';
-import 'package:energy_clock/shared/widgets/app_card.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/shared/widgets/app_button.dart';
+import 'package:altidial/shared/widgets/app_card.dart';
 import 'package:flutter/material.dart';
 
 /// Shown in place of the controls when the app is opened and finds a session

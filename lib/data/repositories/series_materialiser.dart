@@ -1,11 +1,11 @@
 import 'package:drift/drift.dart';
-import 'package:energy_clock/core/geometry/minute_range.dart';
-import 'package:energy_clock/core/geometry/ring_layout.dart';
-import 'package:energy_clock/core/recurrence/recurrence_rule.dart';
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/data/daos/series_dao.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/models/series_row_rule.dart';
+import 'package:altidial/core/geometry/minute_range.dart';
+import 'package:altidial/core/geometry/ring_layout.dart';
+import 'package:altidial/core/recurrence/recurrence_rule.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/data/daos/series_dao.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/models/series_row_rule.dart';
 
 /// Expands recurring series into ordinary `events` rows (spec §4.3), so that
 /// nothing downstream contains recurrence logic.

@@ -1,6 +1,6 @@
 import 'dart:math' as math;
 
-import 'package:energy_clock/shared/layout/content_width.dart';
+import 'package:altidial/shared/layout/content_width.dart';
 import 'package:flutter/painting.dart';
 
 /// How big the month grid is, from the room the window gives it.

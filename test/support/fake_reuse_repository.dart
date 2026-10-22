@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/data/repositories/reuse_repository.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/data/repositories/reuse_repository.dart';
 
 import 'fake_event_repository.dart';
 

@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:energy_clock/core/geometry/dial_geometry.dart';
+import 'package:altidial/core/geometry/dial_geometry.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

@@ -1,9 +1,9 @@
 import 'package:drift/drift.dart' show Value;
 import 'package:drift/native.dart';
-import 'package:energy_clock/core/event_status.dart';
-import 'package:energy_clock/core/recurrence/recurrence_rule.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/repositories/series_materialiser.dart';
+import 'package:altidial/core/event_status.dart';
+import 'package:altidial/core/recurrence/recurrence_rule.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/repositories/series_materialiser.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

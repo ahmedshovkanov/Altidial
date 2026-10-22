@@ -1,8 +1,8 @@
 // lib/features/projects/widgets/task_toolbar.dart
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/features/projects/model/task_board.dart';
-import 'package:energy_clock/features/projects/providers.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/features/projects/model/task_board.dart';
+import 'package:altidial/features/projects/providers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

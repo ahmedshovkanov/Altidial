@@ -1,6 +1,6 @@
 import 'dart:math' as math;
 
-import 'package:energy_clock/core/tone.dart';
+import 'package:altidial/core/tone.dart';
 import 'package:flutter/material.dart';
 
 /// Completed minutes for one tone.

@@ -1,4 +1,4 @@
-import 'package:energy_clock/data/repositories/stats_repository.dart'
+import 'package:altidial/data/repositories/stats_repository.dart'
     show FocusInstant;
 
 /// The 7×24 focus matrix: seven rows starting on [firstWeekday], each with 24

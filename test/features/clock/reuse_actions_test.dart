@@ -1,7 +1,7 @@
-import 'package:energy_clock/core/geometry/minute_range.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/features/clock/widgets/reuse_actions.dart';
+import 'package:altidial/core/geometry/minute_range.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/features/clock/widgets/reuse_actions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';

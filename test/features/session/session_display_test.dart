@@ -1,8 +1,8 @@
-import 'package:energy_clock/core/geometry/minute_range.dart';
-import 'package:energy_clock/core/session/session_outcome.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/data/repositories/session_repository.dart';
-import 'package:energy_clock/features/session/model/session_display.dart';
+import 'package:altidial/core/geometry/minute_range.dart';
+import 'package:altidial/core/session/session_outcome.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/data/repositories/session_repository.dart';
+import 'package:altidial/features/session/model/session_display.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

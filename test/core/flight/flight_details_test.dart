@@ -1,4 +1,4 @@
-import 'package:energy_clock/core/flight/flight_details.dart';
+import 'package:altidial/core/flight/flight_details.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

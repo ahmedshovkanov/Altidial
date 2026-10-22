@@ -1,6 +1,6 @@
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/app/theme/tone_colors.dart';
-import 'package:energy_clock/core/tone.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/app/theme/tone_colors.dart';
+import 'package:altidial/core/tone.dart';
 import 'package:flutter/material.dart';
 
 /// A pill naming a tone: its `soft` fill, a `solid` dot, and `deep` text.

@@ -1,12 +1,12 @@
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/app/theme/tone_colors.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/features/clock/model/calendar_event.dart';
-import 'package:energy_clock/features/clock/model/day_load.dart';
-import 'package:energy_clock/features/clock/providers.dart';
-import 'package:energy_clock/shared/widgets/app_card.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/app/theme/tone_colors.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/features/clock/model/calendar_event.dart';
+import 'package:altidial/features/clock/model/day_load.dart';
+import 'package:altidial/features/clock/providers.dart';
+import 'package:altidial/shared/widgets/app_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

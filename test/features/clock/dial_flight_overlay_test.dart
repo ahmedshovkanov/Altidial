@@ -1,8 +1,8 @@
-import 'package:energy_clock/core/event_status.dart';
-import 'package:energy_clock/core/geometry/minute_range.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/features/clock/model/calendar_event.dart';
-import 'package:energy_clock/features/clock/widgets/dial_painter.dart';
+import 'package:altidial/core/event_status.dart';
+import 'package:altidial/core/geometry/minute_range.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/features/clock/model/calendar_event.dart';
+import 'package:altidial/features/clock/widgets/dial_painter.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

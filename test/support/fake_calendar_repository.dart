@@ -1,7 +1,7 @@
-import 'package:energy_clock/core/event_status.dart';
-import 'package:energy_clock/core/time/month_time.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/data/repositories/calendar_repository.dart';
+import 'package:altidial/core/event_status.dart';
+import 'package:altidial/core/time/month_time.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/data/repositories/calendar_repository.dart';
 
 import 'fake_event_repository.dart';
 

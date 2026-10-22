@@ -1,14 +1,14 @@
 import 'dart:async';
 
-import 'package:energy_clock/app/theme/app_colors.dart';
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/data/notifications/notification_permission.dart';
-import 'package:energy_clock/data/providers.dart';
-import 'package:energy_clock/data/repositories/notification_scheduler.dart';
-import 'package:energy_clock/shared/widgets/adaptive_choice.dart';
-import 'package:energy_clock/shared/widgets/app_card.dart';
-import 'package:energy_clock/shared/widgets/section_header.dart';
+import 'package:altidial/app/theme/app_colors.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/data/notifications/notification_permission.dart';
+import 'package:altidial/data/providers.dart';
+import 'package:altidial/data/repositories/notification_scheduler.dart';
+import 'package:altidial/shared/widgets/adaptive_choice.dart';
+import 'package:altidial/shared/widgets/app_card.dart';
+import 'package:altidial/shared/widgets/section_header.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

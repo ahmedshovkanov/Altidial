@@ -1,6 +1,6 @@
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/features/reflections/model/reflection.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/features/reflections/model/reflection.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 PatternInput input({

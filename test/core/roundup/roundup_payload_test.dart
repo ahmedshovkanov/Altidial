@@ -1,4 +1,4 @@
-import 'package:energy_clock/core/roundup/roundup_payload.dart';
+import 'package:altidial/core/roundup/roundup_payload.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

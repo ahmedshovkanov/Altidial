@@ -1,5 +1,5 @@
-import 'package:energy_clock/shared/layout/content_width.dart';
-import 'package:energy_clock/shared/layout/window_class.dart';
+import 'package:altidial/shared/layout/content_width.dart';
+import 'package:altidial/shared/layout/window_class.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

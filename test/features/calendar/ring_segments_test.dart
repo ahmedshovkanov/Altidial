@@ -1,7 +1,7 @@
 import 'dart:math' as math;
 
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/features/calendar/model/ring_segments.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/features/calendar/model/ring_segments.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

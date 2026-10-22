@@ -1,5 +1,5 @@
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/core/tone.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/core/tone.dart';
 
 /// Fixed tag set v1. No custom tags. The ids here are domain data; the labels
 /// that go with them are copy, and live in [Strings.tagLabels].

@@ -1,10 +1,10 @@
-import 'package:energy_clock/app/settings/settings_providers.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/data/providers.dart';
-import 'package:energy_clock/data/repositories/stats_repository.dart';
-import 'package:energy_clock/features/stats/model/heatmap.dart';
-import 'package:energy_clock/features/stats/model/stats_period.dart';
-import 'package:energy_clock/features/stats/providers.dart';
+import 'package:altidial/app/settings/settings_providers.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/data/providers.dart';
+import 'package:altidial/data/repositories/stats_repository.dart';
+import 'package:altidial/features/stats/model/heatmap.dart';
+import 'package:altidial/features/stats/model/stats_period.dart';
+import 'package:altidial/features/stats/providers.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 

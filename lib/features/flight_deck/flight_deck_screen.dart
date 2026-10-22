@@ -1,15 +1,15 @@
 // lib/features/flight_deck/flight_deck_screen.dart
-import 'package:energy_clock/app/navigation/tab_bar_inset.dart';
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/features/flight_deck/calm_content.dart';
-import 'package:energy_clock/features/flight_deck/providers.dart';
-import 'package:energy_clock/features/flight_deck/widgets/breathing_launcher.dart';
-import 'package:energy_clock/features/flight_deck/widgets/calm_card_view.dart';
-import 'package:energy_clock/features/flight_deck/widgets/flights_list.dart';
-import 'package:energy_clock/features/flight_deck/widgets/grounding_steps.dart';
-import 'package:energy_clock/features/flight_deck/widgets/next_flight_hero.dart';
-import 'package:energy_clock/shared/layout/content_width.dart';
+import 'package:altidial/app/navigation/tab_bar_inset.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/features/flight_deck/calm_content.dart';
+import 'package:altidial/features/flight_deck/providers.dart';
+import 'package:altidial/features/flight_deck/widgets/breathing_launcher.dart';
+import 'package:altidial/features/flight_deck/widgets/calm_card_view.dart';
+import 'package:altidial/features/flight_deck/widgets/flights_list.dart';
+import 'package:altidial/features/flight_deck/widgets/grounding_steps.dart';
+import 'package:altidial/features/flight_deck/widgets/next_flight_hero.dart';
+import 'package:altidial/shared/layout/content_width.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

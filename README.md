@@ -1,8 +1,8 @@
-# Energy Clock
+# Altidial
 
 Plan your day by energy, not just time.
 
-Energy Clock puts a day on a 24-hour dial. You drag out events around the ring and give each one a **tone**:
+Altidial puts a day on a 24-hour dial. You drag out events around the ring and give each one a **tone**:
 
 | Tone | Colour | Meaning |
 |---|---|---|
@@ -20,6 +20,10 @@ flutter run
 ```
 
 It runs on iPhone (portrait) and iPad (all orientations). The dial planner, the week strip, the Now card, the event sheets, the session timer, repeating events, day templates, Copy yesterday, the Calendar, Stats (week/month tone balance, planned-vs-actual, focus depth, heatmap) and Profile (level and streaks, energy score, badges, weekly roundups, settings, export) are done; notifications arrive in Step 5.
+
+## Demo mode
+
+Hold the Profile tab for six seconds and confirm to replace all data with three months of deterministic demo data. While it is active, Profile shows a Debug section where you can regenerate the demo data or exit and erase it. The trigger exists in every build.
 
 ## Test it
 

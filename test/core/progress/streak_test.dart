@@ -1,4 +1,4 @@
-import 'package:energy_clock/core/progress/streak.dart';
+import 'package:altidial/core/progress/streak.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

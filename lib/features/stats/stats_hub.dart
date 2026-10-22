@@ -1,5 +1,5 @@
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/features/stats/stats_screen.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/features/stats/stats_screen.dart';
 import 'package:flutter/material.dart';
 
 class StatsHub extends StatelessWidget {

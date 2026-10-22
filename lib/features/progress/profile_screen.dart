@@ -1,21 +1,22 @@
 import 'dart:async';
 
-import 'package:energy_clock/app/navigation/tab_bar_inset.dart';
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/data/providers.dart';
-import 'package:energy_clock/features/coach/coach_screen.dart';
-import 'package:energy_clock/features/progress/providers.dart';
-import 'package:energy_clock/features/progress/widgets/badge_grid.dart';
-import 'package:energy_clock/features/progress/widgets/coach_teaser_card.dart';
-import 'package:energy_clock/features/progress/widgets/level_card.dart';
-import 'package:energy_clock/features/progress/widgets/notification_settings.dart';
-import 'package:energy_clock/features/progress/widgets/roundup_archive.dart';
-import 'package:energy_clock/features/progress/widgets/reflections_card.dart';
-import 'package:energy_clock/features/progress/widgets/score_card.dart';
-import 'package:energy_clock/features/progress/widgets/settings_card.dart';
-import 'package:energy_clock/features/progress/widgets/stats_card.dart';
-import 'package:energy_clock/shared/layout/content_width.dart';
+import 'package:altidial/app/navigation/tab_bar_inset.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/data/providers.dart';
+import 'package:altidial/debug/widgets/debug_section.dart';
+import 'package:altidial/features/coach/coach_screen.dart';
+import 'package:altidial/features/progress/providers.dart';
+import 'package:altidial/features/progress/widgets/badge_grid.dart';
+import 'package:altidial/features/progress/widgets/coach_teaser_card.dart';
+import 'package:altidial/features/progress/widgets/level_card.dart';
+import 'package:altidial/features/progress/widgets/notification_settings.dart';
+import 'package:altidial/features/progress/widgets/roundup_archive.dart';
+import 'package:altidial/features/progress/widgets/reflections_card.dart';
+import 'package:altidial/features/progress/widgets/score_card.dart';
+import 'package:altidial/features/progress/widgets/settings_card.dart';
+import 'package:altidial/features/progress/widgets/stats_card.dart';
+import 'package:altidial/shared/layout/content_width.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -115,6 +116,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen>
             const NotificationSettingsSection(),
             const SizedBox(height: AppSpacing.lg),
             const SettingsCard(),
+            const DebugSection(),
           ],
         ),
       ),

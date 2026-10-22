@@ -1,8 +1,8 @@
-import 'package:energy_clock/core/geometry/minute_range.dart';
-import 'package:energy_clock/core/recurrence/recurrence_rule.dart';
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/data/repositories/series_repository.dart';
+import 'package:altidial/core/geometry/minute_range.dart';
+import 'package:altidial/core/recurrence/recurrence_rule.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/data/repositories/series_repository.dart';
 
 import 'fake_event_repository.dart';
 

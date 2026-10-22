@@ -1,9 +1,9 @@
 // lib/features/projects/widgets/task_drag.dart
-import 'package:energy_clock/app/theme/app_colors.dart';
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/features/projects/widgets/task_card.dart';
+import 'package:altidial/app/theme/app_colors.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/features/projects/widgets/task_card.dart';
 import 'package:flutter/material.dart';
 
 /// How long a card is held before a drag starts. Short enough to feel

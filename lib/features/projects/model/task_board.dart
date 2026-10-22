@@ -1,7 +1,7 @@
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/core/task_status.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/features/projects/providers.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/core/task_status.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/features/projects/providers.dart';
 
 enum TasksSort { manual, title, due, priority, created, estimate, updated }
 

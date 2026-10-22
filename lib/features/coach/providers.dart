@@ -1,14 +1,14 @@
-import 'package:energy_clock/app/settings/settings_providers.dart';
-import 'package:energy_clock/core/coach/planner.dart';
-import 'package:energy_clock/core/coach/reflection_summary.dart';
-import 'package:energy_clock/core/roundup/iso_week.dart';
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/providers.dart';
-import 'package:energy_clock/data/repositories/stats_repository.dart';
-import 'package:energy_clock/features/clock/providers.dart';
-import 'package:energy_clock/features/reflections/providers.dart';
-import 'package:energy_clock/features/stats/model/heatmap.dart';
+import 'package:altidial/app/settings/settings_providers.dart';
+import 'package:altidial/core/coach/planner.dart';
+import 'package:altidial/core/coach/reflection_summary.dart';
+import 'package:altidial/core/roundup/iso_week.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/providers.dart';
+import 'package:altidial/data/repositories/stats_repository.dart';
+import 'package:altidial/features/clock/providers.dart';
+import 'package:altidial/features/reflections/providers.dart';
+import 'package:altidial/features/stats/model/heatmap.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final todayIntentProvider = StreamProvider(

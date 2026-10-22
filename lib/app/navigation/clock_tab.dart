@@ -1,8 +1,8 @@
-import 'package:energy_clock/data/providers.dart';
-import 'package:energy_clock/features/clock/clock_screen.dart';
-import 'package:energy_clock/features/session/providers.dart';
-import 'package:energy_clock/features/session/session_alerts.dart';
-import 'package:energy_clock/features/session/session_screen.dart';
+import 'package:altidial/data/providers.dart';
+import 'package:altidial/features/clock/clock_screen.dart';
+import 'package:altidial/features/session/providers.dart';
+import 'package:altidial/features/session/session_alerts.dart';
+import 'package:altidial/features/session/session_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

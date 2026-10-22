@@ -1,11 +1,12 @@
 import 'dart:async';
 
-import 'package:energy_clock/app/navigation/tab_dial_icon.dart';
-import 'package:energy_clock/app/theme/app_colors.dart';
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/shared/layout/content_width.dart';
-import 'package:energy_clock/shared/widgets/press_scale.dart';
+import 'package:altidial/app/navigation/tab_dial_icon.dart';
+import 'package:altidial/app/theme/app_colors.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/debug/debug_constants.dart';
+import 'package:altidial/shared/layout/content_width.dart';
+import 'package:altidial/shared/widgets/press_scale.dart';
 import 'package:flutter/cupertino.dart' show CupertinoIcons;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -16,6 +17,7 @@ class AppTabBar extends StatelessWidget {
   const AppTabBar({
     required this.selectedIndex,
     required this.onSelected,
+    this.onProfileHold,
     super.key,
   });
 
@@ -33,10 +35,15 @@ class AppTabBar extends StatelessWidget {
 
   final int selectedIndex;
   final ValueChanged<int> onSelected;
+  final VoidCallback? onProfileHold;
 
   Widget _icon(int index, bool selected, Color color) => switch (index) {
     0 => TabDialIcon(selected: selected, color: color),
-    1 => Icon(selected ? CupertinoIcons.folder_fill : CupertinoIcons.folder, color: color, size: 24),
+    1 => Icon(
+      selected ? CupertinoIcons.folder_fill : CupertinoIcons.folder,
+      color: color,
+      size: 24,
+    ),
     2 => Icon(CupertinoIcons.calendar, color: color, size: 24),
     3 => Icon(
       selected ? CupertinoIcons.person_fill : CupertinoIcons.person,
@@ -83,6 +90,7 @@ class AppTabBar extends StatelessWidget {
                           selected: i == selectedIndex,
                           icon: (color) => _icon(i, i == selectedIndex, color),
                           onTap: () => onSelected(i),
+                          onHold: i == 3 ? onProfileHold : null,
                         ),
                       ),
                   ],
@@ -103,6 +111,7 @@ class _TabItem extends StatelessWidget {
     required this.selected,
     required this.icon,
     required this.onTap,
+    this.onHold,
     super.key,
   });
 
@@ -111,6 +120,7 @@ class _TabItem extends StatelessWidget {
   final bool selected;
   final Widget Function(Color color) icon;
   final VoidCallback onTap;
+  final VoidCallback? onHold;
 
   @override
   Widget build(BuildContext context) {
@@ -118,46 +128,96 @@ class _TabItem extends StatelessWidget {
     final foreground = selected ? colors.onInk : colors.muted;
     final reduceMotion = MediaQuery.disableAnimationsOf(context);
 
+    final press = PressScale(
+      onTap: () {
+        if (!selected) unawaited(HapticFeedback.selectionClick());
+        onTap();
+      },
+      child: AnimatedContainer(
+        duration: reduceMotion ? Duration.zero : AppMotion.base,
+        curve: AppMotion.standard,
+        decoration: BoxDecoration(
+          color: selected ? colors.ink : AppColors.transparent,
+          borderRadius: BorderRadius.circular(AppRadii.pill),
+        ),
+        alignment: Alignment.center,
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            icon(foreground),
+            if (selected) ...[
+              const SizedBox(width: 6),
+              Flexible(
+                child: Text(
+                  label,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: Theme.of(
+                    context,
+                  ).textTheme.labelLarge!.copyWith(color: foreground),
+                ),
+              ),
+            ],
+          ],
+        ),
+      ),
+    );
+
     return Semantics(
       button: true,
       selected: selected,
       label: Strings.tabSemantics(label, position, AppTabBar.tabCount),
       excludeSemantics: true,
       onTap: onTap,
-      child: PressScale(
-        onTap: () {
-          if (!selected) unawaited(HapticFeedback.selectionClick());
-          onTap();
-        },
-        child: AnimatedContainer(
-          duration: reduceMotion ? Duration.zero : AppMotion.base,
-          curve: AppMotion.standard,
-          decoration: BoxDecoration(
-            color: selected ? colors.ink : AppColors.transparent,
-            borderRadius: BorderRadius.circular(AppRadii.pill),
-          ),
-          alignment: Alignment.center,
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              icon(foreground),
-              if (selected) ...[
-                const SizedBox(width: 6),
-                Flexible(
-                  child: Text(
-                    label,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: Theme.of(
-                      context,
-                    ).textTheme.labelLarge!.copyWith(color: foreground),
-                  ),
-                ),
-              ],
-            ],
-          ),
-        ),
-      ),
+      child: onHold == null
+          ? press
+          : _HoldDetector(onHold: onHold!, child: press),
+    );
+  }
+}
+
+class _HoldDetector extends StatefulWidget {
+  const _HoldDetector({required this.onHold, required this.child});
+
+  final VoidCallback onHold;
+  final Widget child;
+
+  @override
+  State<_HoldDetector> createState() => _HoldDetectorState();
+}
+
+class _HoldDetectorState extends State<_HoldDetector> {
+  Timer? _timer;
+  bool _fired = false;
+
+  void _down(PointerDownEvent event) {
+    _timer?.cancel();
+    _fired = false;
+    _timer = Timer(debugHoldDuration, () {
+      if (!mounted || _fired) return;
+      _fired = true;
+      widget.onHold();
+    });
+  }
+
+  void _up(PointerEvent event) {
+    _timer?.cancel();
+    _timer = null;
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Listener(
+      onPointerDown: _down,
+      onPointerUp: _up,
+      onPointerCancel: _up,
+      child: widget.child,
     );
   }
 }

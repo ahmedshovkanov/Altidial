@@ -1,7 +1,7 @@
 // lib/features/flight_deck/widgets/grounding_steps.dart
-import 'package:energy_clock/app/theme/app_colors.dart';
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/core/strings.dart';
+import 'package:altidial/app/theme/app_colors.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/core/strings.dart';
 import 'package:flutter/material.dart';
 
 /// 5-4-3-2-1 grounding: name 5 things you see, 4 you feel, 3 you hear,

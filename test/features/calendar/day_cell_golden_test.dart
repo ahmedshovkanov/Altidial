@@ -1,9 +1,9 @@
 // Golden images of the Calendar's day cell: an empty day, one tone, two tones,
 // three tones, a sliver of one tone, today, and a past day, in light and dark.
 // `test/flutter_test_config.dart` loads Nunito, so the numbers are real text.
-import 'package:energy_clock/app/theme/app_theme.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/features/calendar/widgets/day_cell.dart';
+import 'package:altidial/app/theme/app_theme.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/features/calendar/widgets/day_cell.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

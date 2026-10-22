@@ -1,5 +1,5 @@
-import 'package:energy_clock/features/clock/providers.dart';
-import 'package:energy_clock/features/session/providers.dart';
+import 'package:altidial/features/clock/providers.dart';
+import 'package:altidial/features/session/providers.dart';
 
 /// A [ClockNotifier] that never ticks by itself. Tests set the time directly:
 ///

@@ -1,5 +1,5 @@
-import 'package:energy_clock/core/geometry/minute_range.dart';
-import 'package:energy_clock/core/geometry/ring_layout.dart';
+import 'package:altidial/core/geometry/minute_range.dart';
+import 'package:altidial/core/geometry/ring_layout.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

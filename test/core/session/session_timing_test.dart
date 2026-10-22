@@ -1,5 +1,5 @@
-import 'package:energy_clock/core/session/session_outcome.dart';
-import 'package:energy_clock/core/session/session_timing.dart';
+import 'package:altidial/core/session/session_outcome.dart';
+import 'package:altidial/core/session/session_timing.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

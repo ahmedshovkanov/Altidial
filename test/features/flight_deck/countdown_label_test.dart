@@ -1,10 +1,10 @@
-import 'package:energy_clock/core/geometry/minute_range.dart';
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/features/clock/data/event_repository.dart'
+import 'package:altidial/core/geometry/minute_range.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/features/clock/data/event_repository.dart'
     show CalendarEvent, EventStatus;
-import 'package:energy_clock/features/flight_deck/widgets/next_flight_hero.dart';
+import 'package:altidial/features/flight_deck/widgets/next_flight_hero.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 CalendarEvent flightAt(DateTime day, int start) => CalendarEvent(

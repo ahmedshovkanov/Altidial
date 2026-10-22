@@ -1,4 +1,4 @@
-import 'package:energy_clock/core/time/month_time.dart';
+import 'package:altidial/core/time/month_time.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

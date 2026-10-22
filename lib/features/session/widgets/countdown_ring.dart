@@ -1,6 +1,6 @@
 import 'dart:math' as math;
 
-import 'package:energy_clock/app/theme/app_colors.dart';
+import 'package:altidial/app/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 
 /// A ring that empties clockwise as time runs out. It starts full at the top.

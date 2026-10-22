@@ -1,12 +1,12 @@
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/data/providers.dart';
-import 'package:energy_clock/data/repositories/stats_repository.dart';
-import 'package:energy_clock/features/reflections/reflections_screen.dart';
-import 'package:energy_clock/features/stats/stats_screen.dart';
-import 'package:energy_clock/shared/charts/heatmap_painter.dart';
-import 'package:energy_clock/shared/charts/paired_bars_painter.dart';
-import 'package:energy_clock/shared/charts/stacked_bars_painter.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/data/providers.dart';
+import 'package:altidial/data/repositories/stats_repository.dart';
+import 'package:altidial/features/reflections/reflections_screen.dart';
+import 'package:altidial/features/stats/stats_screen.dart';
+import 'package:altidial/shared/charts/heatmap_painter.dart';
+import 'package:altidial/shared/charts/paired_bars_painter.dart';
+import 'package:altidial/shared/charts/stacked_bars_painter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

@@ -1,10 +1,10 @@
-import 'package:energy_clock/core/geometry/minute_range.dart';
-import 'package:energy_clock/core/session/session_outcome.dart';
-import 'package:energy_clock/core/session/session_timing.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/data/daos/session_dao.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/features/reflections/model/reflection.dart';
+import 'package:altidial/core/geometry/minute_range.dart';
+import 'package:altidial/core/session/session_outcome.dart';
+import 'package:altidial/core/session/session_timing.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/data/daos/session_dao.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/features/reflections/model/reflection.dart';
 
 /// A session as the rest of the app sees it, kept separate from the Drift row
 /// so that widgets never depend on the persistence layer's generated types.

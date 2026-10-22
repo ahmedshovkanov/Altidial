@@ -1,8 +1,8 @@
 import 'package:drift/drift.dart';
-import 'package:energy_clock/core/session/session_outcome.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/tables/events_table.dart';
-import 'package:energy_clock/data/tables/sessions_table.dart';
+import 'package:altidial/core/session/session_outcome.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/tables/events_table.dart';
+import 'package:altidial/data/tables/sessions_table.dart';
 
 part 'stats_dao.g.dart';
 

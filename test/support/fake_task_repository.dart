@@ -1,10 +1,10 @@
 import 'dart:async';
 
 import 'package:drift/drift.dart' show Value;
-import 'package:energy_clock/core/task_status.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/repositories/task_repository.dart';
-import 'package:energy_clock/features/projects/model/task_board.dart';
+import 'package:altidial/core/task_status.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/repositories/task_repository.dart';
+import 'package:altidial/features/projects/model/task_board.dart';
 
 /// An in-memory [TaskRepository] for widget tests. Mirrors the Drift
 /// repository's column ordering (boardStatus → sortOrder → id), title/notes

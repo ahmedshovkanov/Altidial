@@ -1,8 +1,8 @@
-import 'package:energy_clock/core/roundup/roundup_payload.dart';
-import 'package:energy_clock/core/time/day_time.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/providers.dart';
-import 'package:energy_clock/data/repositories/roundup_repository.dart';
+import 'package:altidial/core/roundup/roundup_payload.dart';
+import 'package:altidial/core/time/day_time.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/providers.dart';
+import 'package:altidial/data/repositories/roundup_repository.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 /// The cached progress row: level, XP and streaks.

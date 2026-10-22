@@ -1,6 +1,6 @@
 import 'dart:math' as math;
 
-import 'package:energy_clock/shared/layout/window_class.dart';
+import 'package:altidial/shared/layout/window_class.dart';
 import 'package:flutter/painting.dart';
 
 /// How the session screen is arranged for a window. Unlike the Clock page, the

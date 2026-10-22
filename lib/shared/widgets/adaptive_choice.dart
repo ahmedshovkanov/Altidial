@@ -1,4 +1,4 @@
-import 'package:energy_clock/app/theme/app_colors.dart';
+import 'package:altidial/app/theme/app_colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

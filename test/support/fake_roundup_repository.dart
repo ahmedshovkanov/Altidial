@@ -1,9 +1,9 @@
 import 'dart:async';
 
-import 'package:energy_clock/core/roundup/roundup_payload.dart';
-import 'package:energy_clock/data/repositories/roundup_repository.dart';
+import 'package:altidial/core/roundup/roundup_payload.dart';
+import 'package:altidial/data/repositories/roundup_repository.dart';
 
-export 'package:energy_clock/data/repositories/roundup_repository.dart'
+export 'package:altidial/data/repositories/roundup_repository.dart'
     show RoundupSummary;
 
 /// In-memory [RoundupRepository] for widget tests. Tests seed [summaries] and

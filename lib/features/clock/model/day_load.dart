@@ -1,5 +1,5 @@
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/features/clock/model/calendar_event.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/features/clock/model/calendar_event.dart';
 
 /// Planned minutes per tone for one day.
 class DayLoad {

@@ -1,11 +1,11 @@
 import 'package:drift/drift.dart';
 import 'package:drift/native.dart';
-import 'package:energy_clock/core/recurrence/recurrence_rule.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/notifications/notification_permission.dart';
-import 'package:energy_clock/data/repositories/notification_scheduler.dart';
-import 'package:energy_clock/data/repositories/series_materialiser.dart';
+import 'package:altidial/core/recurrence/recurrence_rule.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/notifications/notification_permission.dart';
+import 'package:altidial/data/repositories/notification_scheduler.dart';
+import 'package:altidial/data/repositories/series_materialiser.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import '../support/fake_notification_service.dart';

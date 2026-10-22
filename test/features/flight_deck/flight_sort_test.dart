@@ -1,9 +1,9 @@
 // test/features/flight_deck/flight_sort_test.dart
-import 'package:energy_clock/core/geometry/minute_range.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/features/clock/data/event_repository.dart'
+import 'package:altidial/core/geometry/minute_range.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/features/clock/data/event_repository.dart'
     show CalendarEvent, EventStatus;
-import 'package:energy_clock/features/flight_deck/flight_sort.dart';
+import 'package:altidial/features/flight_deck/flight_sort.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 CalendarEvent flight(int id, DateTime date, int start, int end) =>

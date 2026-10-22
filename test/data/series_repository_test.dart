@@ -1,14 +1,14 @@
 import 'package:drift/drift.dart' show Value;
 import 'package:drift/native.dart';
-import 'package:energy_clock/core/event_status.dart';
-import 'package:energy_clock/core/geometry/minute_range.dart';
-import 'package:energy_clock/core/geometry/ring_layout.dart';
-import 'package:energy_clock/core/recurrence/recurrence_rule.dart';
-import 'package:energy_clock/core/tone.dart';
-import 'package:energy_clock/data/database.dart';
-import 'package:energy_clock/data/models/series_row_rule.dart';
-import 'package:energy_clock/data/repositories/series_materialiser.dart';
-import 'package:energy_clock/data/repositories/series_repository.dart';
+import 'package:altidial/core/event_status.dart';
+import 'package:altidial/core/geometry/minute_range.dart';
+import 'package:altidial/core/geometry/ring_layout.dart';
+import 'package:altidial/core/recurrence/recurrence_rule.dart';
+import 'package:altidial/core/tone.dart';
+import 'package:altidial/data/database.dart';
+import 'package:altidial/data/models/series_row_rule.dart';
+import 'package:altidial/data/repositories/series_materialiser.dart';
+import 'package:altidial/data/repositories/series_repository.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

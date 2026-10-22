@@ -1,9 +1,9 @@
 // lib/features/flight_deck/widgets/breathing_launcher.dart
-import 'package:energy_clock/app/theme/app_colors.dart';
-import 'package:energy_clock/app/theme/tokens.dart';
-import 'package:energy_clock/core/strings.dart';
-import 'package:energy_clock/features/flight_deck/breathing/breathing_screen.dart';
-import 'package:energy_clock/shared/widgets/app_card.dart';
+import 'package:altidial/app/theme/app_colors.dart';
+import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/core/strings.dart';
+import 'package:altidial/features/flight_deck/breathing/breathing_screen.dart';
+import 'package:altidial/shared/widgets/app_card.dart';
 import 'package:flutter/material.dart';
 
 /// The Flight Deck's top entry point into the full-screen breathing minigame.
