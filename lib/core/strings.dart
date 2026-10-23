@@ -392,6 +392,7 @@ abstract final class Strings {
   static const String settingsExport = 'Export data';
   static const String settingsExportSubject = 'Altidial export';
   static const String settingsExportFailed = 'Export failed. Try again.';
+  static const String settingsPrivacy = 'Privacy Policy';
   static const String settingsErase = 'Erase everything';
   static const String settingsEraseTitle = 'Erase everything?';
   static const String settingsEraseBody =

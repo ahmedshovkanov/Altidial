@@ -4,6 +4,8 @@ import 'package:altidial/app/onboarding/onboarding_providers.dart';
 import 'package:altidial/app/settings/settings_providers.dart';
 import 'package:altidial/app/theme/app_colors.dart';
 import 'package:altidial/app/theme/tokens.dart';
+import 'package:altidial/core/app_config.dart';
+import 'package:altidial/core/links/open_link.dart';
 import 'package:altidial/core/strings.dart';
 import 'package:altidial/core/time/day_time.dart';
 import 'package:altidial/data/providers.dart';
@@ -164,6 +166,11 @@ class SettingsCard extends ConsumerWidget {
             key: const ValueKey('settings-export'),
             label: Strings.settingsExport,
             onTap: () => _export(context, ref),
+          ),
+          _Row(
+            key: const ValueKey('settings-privacy'),
+            label: Strings.settingsPrivacy,
+            onTap: () => openUrl(AppConfig.privacyPolicyUrl),
           ),
           _Row(
             key: const ValueKey('settings-erase'),

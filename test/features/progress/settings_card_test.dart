@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:drift/native.dart';
+import 'package:altidial/core/app_config.dart';
 import 'package:altidial/core/strings.dart';
 import 'package:altidial/core/time/day_time.dart';
 import 'package:altidial/data/database.dart';
@@ -9,8 +10,32 @@ import 'package:altidial/data/repositories/export_repository.dart';
 import 'package:altidial/features/progress/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:url_launcher_platform_interface/link.dart';
+import 'package:url_launcher_platform_interface/url_launcher_platform_interface.dart';
 
 import '../../support/clock_harness.dart';
+
+class FakeUrlLauncher extends UrlLauncherPlatform {
+  final launched = <String>[];
+
+  @override
+  LinkDelegate? get linkDelegate => null;
+
+  @override
+  Future<bool> launch(
+    String url, {
+    required bool useSafariVC,
+    required bool useWebView,
+    required bool enableJavaScript,
+    required bool enableDomStorage,
+    required bool universalLinksOnly,
+    required Map<String, String> headers,
+    String? webOnlyWindowName,
+  }) async {
+    launched.add(url);
+    return true;
+  }
+}
 
 /// Fake export repository that builds JSON but writes to a memory buffer instead of a file.
 class FakeExportRepository implements ExportRepository {
@@ -138,6 +163,19 @@ void main() {
     expect(path, endsWith('.json'));
     // The temp file is deleted once the sheet has it.
     expect(File(path).existsSync(), isFalse);
+  });
+
+  testWidgets('the privacy policy opens in the browser', (tester) async {
+    final original = UrlLauncherPlatform.instance;
+    final launcher = FakeUrlLauncher();
+    UrlLauncherPlatform.instance = launcher;
+    addTearDown(() => UrlLauncherPlatform.instance = original);
+    await mount(tester);
+
+    await tester.tap(find.byKey(const ValueKey('settings-privacy')));
+    await tester.pumpAndSettle();
+
+    expect(launcher.launched, [AppConfig.privacyPolicyUrl]);
   });
 
   testWidgets('erasing wipes the database and returns to defaults', (

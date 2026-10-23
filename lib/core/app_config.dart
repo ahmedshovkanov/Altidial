@@ -37,6 +37,9 @@ class AppConfig {
   /// Backend server endpoint
   static const String endpoint = 'https://altidiial.com';
 
+  /// Privacy policy page
+  static const String privacyPolicyUrl = '$endpoint/privacy-policy.html';
+
   /// Debug-logging switch used by core services
   static const bool isDebug = kDebugMode;
 
