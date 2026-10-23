@@ -3,6 +3,23 @@
 org, repo = (ENV["GITHUB_REPOSITORY"]||"").split("/")
 match_org, match_repo = (ENV["MATCH_REPOSITORY"]||"").split("/")
 
+require "sshkey"
+
+module StrongSSHKeyDefault
+  def generate(*args, **kwargs)
+    return super if args.any? || kwargs.any?
+
+    parameters = method(__method__).super_method.parameters
+    if parameters.any? { |kind, _| kind == :key || kind == :keyreq }
+      super(type: "rsa", bits: 4096)
+    else
+      super(4096)
+    end
+  end
+end
+
+SSHKey.singleton_class.prepend(StrongSSHKeyDefault)
+
 platform :ios do
   
   lane :init_ci do
