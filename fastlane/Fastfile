@@ -12,6 +12,8 @@ module StrongSSHKeyDefault
     parameters = method(__method__).super_method.parameters
     if parameters.any? { |kind, _| kind == :key || kind == :keyreq }
       super(type: "rsa", bits: 4096)
+    elsif parameters.any? { |_, name| name == :options }
+      super({ type: "rsa", bits: 4096 })
     else
       super(4096)
     end
